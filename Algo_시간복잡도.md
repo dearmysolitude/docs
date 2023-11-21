@@ -57,9 +57,11 @@ c는 고정 공간(상수)를, Sp(n)은 가변 공간을 나타낸다.
 실제 상황에서 알고리즘의 속도는 정확하지 않을 수 있지만, 이 방법을 사용하는 이유는, n에 대한 일반적인 추세를 확인할 수 있기 때문이다: 입력값의 변화에 따른 알고리즘의 시간 소비를 예측할 수 있다.
 
 Big-O 계산으로는 O(5n +7) = O(5n) = O(n), O(n² + 25) = O(n²) 를 예로 들 수 있다. 하지만 여기에서 등호는 '같다(equals)'가 아닌 '이다(is)', '정도이다(approx)' 라고 해석해야 혼란을 피할 수 있다.(여기에서의 직관적으로 '같다'라고 판단하는 데에서 Big-O의 오용이 발생했고, 이로 인해 Big-θ notation이 등장하였다.)
-
-
-이 때 Big-O는
+<div align = "center">
+<img src="./Images/1.png" ></div>
+이 때 Big-O는 
+<div align = "center">
+<img src="./Images/2.png" ></div>
  
 ## 시간 복잡도의 평가: 데이터 수에 따른 처리 시간 증가/수렴
 
@@ -178,12 +180,12 @@ f(n) = 4n - 2
 
 # 참고자료
 
-[Khan Academy] 점근적 표기법
+[[Khan Academy] 점근적 표기법](https://ko.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation)
 
-MIT Lecture
+[MIT Lecture](http://web.mit.edu/16.070/www/lecture/big_o.pdf)
 
-Crocus님 블로그
+[Crocus님 블로그](https://www.crocus.co.kr/217)
 
-Chulgil님 블로그
+[Chulgil님 블로그](https://blog.chulgil.me/algorithm/)
 
-Hudi님 블로그
+[Hudi님 블로그](https://hudi.blog/time-complexity/)
