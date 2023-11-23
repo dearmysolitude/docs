@@ -244,7 +244,7 @@ Ethernet frame 헤더의 구조는 그림과 같다:
 
 <div align="center"><img src="./Images/IPPacket.png" width="500"></div>
 
-- **Total length**가 16 bits이므로 header를 포함하여 64 KB
+- **Total length**가 16 bits이므로 header를 포함하여 64 KB를 최대 크기로 하여 보낼 수 있다.
 
 - 보다 큰 데이터를 보내기 위해서는 상위 계층에서 64 KB 단위로 쪼개서 전송해야 한다.
 
@@ -254,29 +254,83 @@ Ethernet frame 헤더의 구조는 그림과 같다:
     - Hop-by-Hop 방식인 IP는 hop을 지날 때마다(= gateway 지날 때마다) 헤더 필드의 TTL(Time to Live)를 갱신한다.
 
     - 즉 계속해서 checksum이 변경(무조건)되므로 전체를 체크하는 것이 부담이 된다.
-- IP는 전송을 보장하지 않는다.
 
-- 
+- 하위 data link layer의 payload 길이 제한을 넘을 경우 여러 개의 IP Packet으로 쪼개서 전송한다.
+    - 전송 받는 곳에서는 data link lyaer의 payload를 재결합해서 IP packet으로 복원한다.
+    - 이 때, 하나라도 누락되면 IP packet은 전체 누락된다: 누락 사유: Congestion, bit error
 
-### Transport Layer: Segment(TCP) / User Datagram(UCP)
+→ IP는 최선을 다해 전송을 시도하지만, 보장하지는 않는다: **best-effort**
 
-#### Segment
-
-<div align="center"><img src="./Images/UDPDatagram.png" width="500"></div>
+### Transport Layer: Segment(TCP) / User Datagram(UDP)
 
 #### User Datagram
+IP 기능 위에 포트 구분, checksum 기능이 추가된다.
+<div align="center"><img src="./Images/UDPDatagram.png" width="500"></div>
+
+- Port를 제공하고, checksum계산하는 것 외에는 추가되는 기능이 없다. L3 layer 인 IP 의 기능을 L4 layer에서 사용하기 위한 프로토콜이기 때문.
+- IP 속성을 지녀, IP 헤더 포함 64 KB 이내에서는 보낸 그대로 수신 측에서 받게 된다.
+- 독자적으로 쪼개는 기능을 제공하지 않음: IP에 의존
+
+#### Segment
+특징 1. 데이터가 연속적인 것 같은 환상을 준다: stream
+
+특징 2. 받았는지 안 받았는지 체크한다.
+
+특징 3. 수신자의 여력을 체크한다.
 <div align="center"><img src="./Images/TCPSegment.png" width="500"></div>
 
-#### UDP vs. TCP
+</br>
 
-## 
-### Client-Server
-### Peer-to-Peer
+특징 1 부연. Data Stream
+
+- TCP의 sequence 번호(ACK 번호)는 전송되는 데이터를 byte 단위로 트래킹한다.
+- 데이터 전송량에 따라 IP packet을 여러개로 쪼개서 전송한다.
+- 수신 측에서는 TCP segment를 sequence 번호를 이용해 결합한다.
+- TCP는 하나씩 끊겨서 전송되는 IP 위에서 마치 data가 연속적으로 흐르는 듯한 환경을 제공한다.
+
+</br>
+
+특징 2 부연. Connection 기반
+- TCP는 특정 상대방을 가정하고,
+    - 전송 data의 byte단위 **sequence 번호**
+    - 어디까지 수신했는지 byte단위 **ack 번호**
+    를 관리한다.
+- 양 끝단(end-point)의 state를 관리하기 때문에, TCP는 stateful하고 connection기반이라고 한다.
+
+</br>
+
+특징 3 부연. TCP의 전송제어
+- 수신자의 여력: 버퍼 크기 → TCP 헤더 중 **Window Size**
+> **Window size**
+> - 상대방에 자신이 얼마나 큰 데이터를 받을 수 있는지 advertise한다. (받는 쪽은 receive window size)
+> - Socket library로는 setsocketopt로 변경 가능
+> -  여기서 advertise 된 window size 단위로 데이터가 전송되지 않고, 뒤에 설명하는 혼잡 제어 알고리즘에 따른 window 크기와 비교해서 둘 중 작은 사이즈로 데이터를 전송한다.
+
+- 중간에 거치는 gateway들의 여력: 버퍼 크기 → 받았는지 여부: TCP 헤더 중 **SEQ/ACK**
+
+#### Network Congestion(네트워크 혼잡)
+네트워크 경로상의 장비나 회선의 과부화로 traffic을 drop하는 것.
+#### 네트워크 혼잡 제어
+
+Need to start here...
+
+### UDP vs. TCP
+
+- 모두 L4 layer 프로토콜
+- UDP 는 L3 인 IP 를 L4 에서 사용하기 위한 껍데기
+- TCP 는 혼잡 제어와 그 과정 중 재전송 기능 제공
+
+
+<!-- 
+## Client-Server vs. Peer-to-Peer
+
+### Client-Server 모델
+### Peer-to-Peer 모델
 
 ## NAT(Network Address Translation)
 
 ### NAPT
-### NAT 순회
+### NAT 순회 -->
 
 
 
