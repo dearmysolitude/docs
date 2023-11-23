@@ -68,12 +68,12 @@ OSI 7 계층 모형은 Reference model이다.
 
 <br/>
 
-#### 물리계층(Data Link Layer)
-#### 데이터 링크 계층(Network Layer)
-#### 네트워크 계층(Transport Layer)
-#### 세션 계층(Session Layer)
-#### 표현 계층(Presentation Layer)
-#### 응용 계층(Application Layer)
+- 물리계층(Data Link Layer)
+- 데이터 링크 계층(Network Layer)
+- 네트워크 계층(Transport Layer)
+- 세션 계층(Session Layer)
+- 표현 계층(Presentation Layer)
+- 응용 계층(Application Layer)
 
 <br/>
 
@@ -175,6 +175,8 @@ IP 주소보다는 사이트 이름이 사용자에게 더 기억하기 쉽다: 
 
 ## Ethernet, UDP, TCP, IP
 
+<div align="center"><img src="./Images/Switch_OSI.png" width="300"></div>
+
 ### Switch
 - 사전적 의미: 전환
 - 네트워크에서 스위치: 트래픽의 방향을 전환하는 것
@@ -185,52 +187,100 @@ IP 주소보다는 사이트 이름이 사용자에게 더 기억하기 쉽다: 
     - L2/L3/L7에 따라 트래픽을 전달하는 소프트웨어
     - AWS 에서 L7에 따라 분배하는 기능을 제공한다: Elastic Load Balancer
 
-<div align="center"><img src="./Images/Switch_OSI.png" width="300"></div>
-
 <br/>
 Question 1: Ethernet frame의 목적지 정보에 따라 출력 포트를 선택해서 전달하는 장비는?
 
 👉 L2 switch
+
 <br/>
 Question 2: IP Packet 의 목적지 정보에 따라 출력 포트를 선택하는 장비는 같은 목적지라도 해당 패킷의 출처(= 송신자) 가 사내인지 사외인지에 따라 다시 출력 포트를 조정한다. 이 장비는 무슨 switch일까?
 
 👉 L3 switch
 
+</br>
+
 방화벽 장비 혹은 침입 탐지 시스템(IDS: Intrusion Detection System) 등이 여기에 해당됨.
+
 <br/>
+
 Question 3: HTTP 요청은 이를 처리하는 동등한 역할의 서버를 여러 대 운용한다(Pooling이라고 하고, HTTP server pool이 있다고 한다). 과부하가 걸리는 것을 막기 위해서는 이 앞단에 pool 내 서버들에 round-robin 방식으로 분산해 주는 장비가 있다. 이 장비는?
 
 👉 L7 switch
 
 Load balancer(LB)가 여기 해당한다. LB 역시 스위치이고, 밸런싱 기준 layer를 명시하였으므로 여기에서는 , L7의 switch이다.
+
 <br/>
 
 ## Protocol Data Unit(PDU)
 
 각 프로토콜의 1개 데이터를 지칭한다.
 
-<div align="center"><img src="./Images/PDU.png" width="300"></div>
+<div align="center"><img src="./Images/PDU.png" width="400"></div>
 
 <br/>
 
-### 되짚기
+### 각 계층의 전송 단위
+<div align="center"><img src="./Images/protocol.png" width="400"></div>
 
 1. 검은색 부분은 헤더:프로토콜은 헤더 + 데이터
-2. 헤더에 송신자 주소, 수신자 주소, 계층별로는 MAC, IP, Port 주소임
-3. 헤더에는 주소 말고도 다른 부가 정보들도 포함된다
-* 프로토콜이 할 수 있는 것과 할 수 없는 것은 헤더에 의해 결정됨
 
-<div align="center"><img src="./Images/protocol.png" width="300"></div>
+2. 헤더에 송신자 주소, 수신자 주소, 계층별로는 MAC, IP, Port 주소임
+
+3. 헤더에는 주소 말고도 다른 부가 정보들도 포함된다
+
+프로토콜이 할 수 있는 것과 할 수 없는 것은 헤더에 의해 결정됨
 
 ### Data Link Layer: Ethernet Frame
+Ethernet frame 헤더의 구조는 그림과 같다:
 
+<div align="center"><img src="./Images/EthernetFrame.png" width="500"></div>
 
+- **CRC**가 있어 frame 오류를 걸러낼 수 있다.
 
-### Network Layer: IP Packet(Datagram)
+- 최대 길이가 정해져 있다: 46~1500 B로, 이를 넘어가면 상위 계층에서 쪼개서 보내야한다.
 
-### Transport Layer
+### Network Layer: IP Packet 혹은 Datagram
+소스와 목적지 IP, 프로토콜 사양 필드, 데이터, 트레일러, 프로토콜 버전 등이 포함된 헤더를 가지고 있다. 트레일러 필드에는 오류 수정 및 식별을 위한 기타 플래그에 대한 정보가 담겨있다. 헤더 구조:
+
+<div align="center"><img src="./Images/IPPacket.png" width="500"></div>
+
+- **Total length**가 16 bits이므로 header를 포함하여 64 KB
+
+- 보다 큰 데이터를 보내기 위해서는 상위 계층에서 64 KB 단위로 쪼개서 전송해야 한다.
+
+- Ethernet이 1500B가 최대인데, 어떻게 담는지: IP 패킷 하나가 여러 ethernet frame으로 쪼개진다: 쪼개는 것을 fragmentation이라고 하고, 헤더에서 순서를 가르키는 **fragment offset**을 확인할 수 있다.
+
+- **Header checksum**을 통해 헤더의 오류를 검증할 수 있다: 효율성을 위해 헤더만 검증한다.
+    - Hop-by-Hop 방식인 IP는 hop을 지날 때마다(= gateway 지날 때마다) 헤더 필드의 TTL(Time to Live)를 갱신한다.
+
+    - 즉 계속해서 checksum이 변경(무조건)되므로 전체를 체크하는 것이 부담이 된다.
+- IP는 전송을 보장하지 않는다.
+
+- 
+
+### Transport Layer: Segment(TCP) / User Datagram(UCP)
+
+#### Segment
+
+<div align="center"><img src="./Images/UDPDatagram.png" width="500"></div>
+
+#### User Datagram
+<div align="center"><img src="./Images/TCPSegment.png" width="500"></div>
 
 #### UDP vs. TCP
 
+## 
+### Client-Server
+### Peer-to-Peer
+
+## NAT(Network Address Translation)
+
+### NAPT
+### NAT 순회
+
+
+
 # 참고 자료
-명지대학교 문대경 교수님의 네트워크 수업을 요약한 것입니다.
+- 명지대학교 문대경 교수님의 네트워크 수업
+
+- https://www.baeldung.com/cs/networking-packet-fragment-frame-datagram-segment

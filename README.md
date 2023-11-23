@@ -5,8 +5,8 @@
 
 ## 카테고리
 
-- 알고리즘 & 자료구조
-- 네트워크
-- 데이터베이스
-- 운영체제
-- 프로그래밍 언어
+- [알고리즘 & 자료구조](./Algorithm/)
+- [네트워크](./Network/)
+- [데이터베이스](./DataBase/)
+- [운영체제](./OperatingSystem/)
+- [프로그래밍 언어](./ProgrammingLanguage/)
