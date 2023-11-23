@@ -22,7 +22,7 @@ ARPANET이라는 네트워크와 ARPA라는 패킷 라디오 네트워크의 관
 (출처: The Design Philosophy of the DARPA Internet Protocols, David D. Clark et al., Proc. SIGCOMM ‘88)
 
 <div align = "center">
-<img src="./Network/Images/IP의_역할.png" width="300" ></div>
+<img src="./Images/IP의_역할.png" width="300" ></div>
 
 <br/>
 
@@ -63,7 +63,7 @@ OSI 7 계층 모형은 Reference model이다.
 기준 모델이므로 실제 구현체가 아니지만 계층 구조를 만들 때 기준이 된다.
 
 <div align="center">
-<img src="./Network/Images/OSI 7 계층.png" width="300">
+<img src="./Images/OSI 7 계층.png" width="300">
 </div>
 
 <br/>
@@ -80,7 +80,7 @@ OSI 7 계층 모형은 Reference model이다.
 ### Box-In-Box
 
 <div align="center">
-<img src="./Network/Images/OSI7_Box_in_Box.png" width="140"></div>
+<img src="./Images/OSI7_Box_in_Box.png" width="140"></div>
 
 어떤 식으로 계층마다 식별가능한 정보를 담는가?
 전달하는 데이터에 헤더를 추가하여 각 계층에서 식별할 수 있는 정보들을 덧씌워 전달한다. 마치 Box-in-Box 와 같은 형태로 되어있다.
@@ -89,7 +89,7 @@ OSI 7 계층 모형은 Reference model이다.
 
 ## 목적지 찾기: 주소 요소들은 어떻게 찾을까?
 
-<div align="center"><img src="./Network/Images/주소찾기.png" width="300"></div>
+<div align="center"><img src="./Images/주소찾기.png" width="300"></div>
 
 ### Port 정보
 
@@ -100,7 +100,7 @@ IP 주소보다는 사이트 이름이 사용자에게 더 기억하기 쉽다: 
 
 **DNS resolution**: 서버 이름으로부터 IP를 알아내는 행동
 
-<div align="center"><img src="./Network/Images/DNS-resolution.png" width="300"></div>
+<div align="center"><img src="./Images/DNS-resolution.png" width="300"></div>
 
 - 매우 iterative한 작업
 - Root 와 Top-level domain(TLD) 서버는 부하가 크다
@@ -126,7 +126,7 @@ IP 주소보다는 사이트 이름이 사용자에게 더 기억하기 쉽다: 
 
 접속할 서버가 다른 네트워크에 있다면: Gateway에 던져놓고 맡긴다.
 
-<div align="center"><img src="./Network/Images/Networkend-to-end.png" width="300"></div>
+<div align="center"><img src="./Images/Networkend-to-end.png" width="300"></div>
 
 
 ### Routing 과 Forwarding: Gateway 찾기
@@ -161,7 +161,7 @@ IP 주소보다는 사이트 이름이 사용자에게 더 기억하기 쉽다: 
     - 송신자가 보낸 데이터가 얼마 만에 수신자에 도달하는가?
     - Latency가 커지면 반응이 느리게 온다는 것을 느끼게 됨.
 
-    <div align="center"><img src="./Network/Images/latency.png" width="300"></div>
+    <div align="center"><img src="./Images/latency.png" width="300"></div>
 
 - Jitter
 
@@ -169,7 +169,7 @@ IP 주소보다는 사이트 이름이 사용자에게 더 기억하기 쉽다: 
     - Jitter가 커지면 튄다는 느낌을 준다.
     - Latency data points 간의 차이에 대한 평균 값으로 계산
 
-    <div align="center"><img src="./Network/Images/jitter.png" width="300"></div>
+    <div align="center"><img src="./Images/jitter.png" width="300"></div>
 
     <br/>
 
@@ -185,7 +185,7 @@ IP 주소보다는 사이트 이름이 사용자에게 더 기억하기 쉽다: 
     - L2/L3/L7에 따라 트래픽을 전달하는 소프트웨어
     - AWS 에서 L7에 따라 분배하는 기능을 제공한다: Elastic Load Balancer
 
-<div align="center"><img src="./Network/Images/Switch_OSI.png" width="300"></div>
+<div align="center"><img src="./Images/Switch_OSI.png" width="300"></div>
 
 <br/>
 Question 1: Ethernet frame의 목적지 정보에 따라 출력 포트를 선택해서 전달하는 장비는?
@@ -209,7 +209,7 @@ Load balancer(LB)가 여기 해당한다. LB 역시 스위치이고, 밸런싱 �
 
 각 프로토콜의 1개 데이터를 지칭한다.
 
-<div align="center"><img src="./Network/Images/PDU.png" width="300"></div>
+<div align="center"><img src="./Images/PDU.png" width="300"></div>
 
 <br/>
 
@@ -220,7 +220,7 @@ Load balancer(LB)가 여기 해당한다. LB 역시 스위치이고, 밸런싱 �
 3. 헤더에는 주소 말고도 다른 부가 정보들도 포함된다
 * 프로토콜이 할 수 있는 것과 할 수 없는 것은 헤더에 의해 결정됨
 
-<div align="center"><img src="./Network/Images/protocol.png" width="300"></div>
+<div align="center"><img src="./Images/protocol.png" width="300"></div>
 
 ### Data Link Layer: Ethernet Frame
 
