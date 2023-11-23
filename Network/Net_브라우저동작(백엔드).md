@@ -1,6 +1,6 @@
 (3) 웹 브라우저에 네이버 를 검색하고 화면에 네이버 화면이 출력이 될 때 까지 내부적으로 어떤 동작들이 수행이 되는지 설명해주세요.
 
-<div align="center"><img src="./Images/브라우저가_하는_일.png" width="300"></div>
+<div align="center"><img src="./Network/Images/브라우저가_하는_일.png" width="300"></div>
 <br/>
 
 1. URL 파싱

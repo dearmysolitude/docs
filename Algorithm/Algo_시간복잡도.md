@@ -1,6 +1,6 @@
 
 <div align = "center">
-<img src="./Images/Notation_big-o.png" width="400" ></div>
+<img src="./Algorithm/Images/Notation_big-o.png" width="400" ></div>
 
 ## 효율적인 알고리즘
 
@@ -48,7 +48,7 @@ c는 고정 공간(상수)를, Sp(n)은 가변 공간을 나타낸다.
  
 ## Big-O Notation
 <div align = "center">
-<img src="./Images/Big-O.png" width="400" ></div>
+<img src="./Algorithm/Images/Big-O.png" width="400" ></div>
 
     정의: 모든 N>N0 에 대하여, f(N) ≤ k⋅g(N) 이 성립하는 양의 상수 k 와 N0​ 가 존재하면, f(N) = O(g(N)) 이다.
 
@@ -58,15 +58,15 @@ c는 고정 공간(상수)를, Sp(n)은 가변 공간을 나타낸다.
 
 Big-O 계산으로는 O(5n +7) = O(5n) = O(n), O(n² + 25) = O(n²) 를 예로 들 수 있다. 하지만 여기에서 등호는 '같다(equals)'가 아닌 '이다(is)', '정도이다(approx)' 라고 해석해야 혼란을 피할 수 있다.(여기에서의 직관적으로 '같다'라고 판단하는 데에서 Big-O의 오용이 발생했고, 이로 인해 Big-θ notation이 등장하였다.)
 <div align = "center">
-<img src="./Images/1.png" ></div>
+<img src="./Algorithm/Images/1.png" ></div>
 이 때 Big-O는 
 <div align = "center">
-<img src="./Images/2.png" ></div>
+<img src="./Algorithm/Images/2.png" ></div>
  
 ## 시간 복잡도의 평가: 데이터 수에 따른 처리 시간 증가/수렴
 
 <div align = "center">
-<img src="./Images/time_complexity.png" width="400" ></div>
+<img src="./Algorithm/Images/time_complexity.png" width="400" ></div>
 
 시간 복잡도를 표현하는 방법 중 하나인 Big-O에 의한 여러가지 알고리즘의 분류. 가로 축은 처리해야하는 데이터 양(n), 세로 축은 그에 따른 작업량을 의미한다. http://bigocheatsheet.com/
 
@@ -128,12 +128,12 @@ def print_each_n_times(li):
 ### 정렬 알고리즘 비교
 
 <div align = "center">
-<img src="./Images/sort-algorithm-compare.png" width="400" ></div>
+<img src="./Algorithm/Images/sort-algorithm-compare.png" width="500" ></div>
 
 ### 자료구조 비교
 
 <div align = "center">
-<img src="./Images/ds-compare.png" width="400" ></div>
+<img src="./Algorithm/Images/ds-compare.png" width="500" ></div>
 
 ## 예제: 코드를 Big-O 로 표기해 보자
 ```
