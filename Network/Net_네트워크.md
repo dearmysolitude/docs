@@ -301,10 +301,10 @@ IP 기능 위에 포트 구분, checksum 기능이 추가된다.
 
 특징 3 부연. TCP의 전송제어
 - 수신자의 여력: 버퍼 크기 → TCP 헤더 중 **Window Size**
-> **Window size**
-> - 상대방에 자신이 얼마나 큰 데이터를 받을 수 있는지 advertise한다. (받는 쪽은 receive window size)
-> - Socket library로는 setsocketopt로 변경 가능
-> -  여기서 advertise 된 window size 단위로 데이터가 전송되지 않고, 뒤에 설명하는 혼잡 제어 알고리즘에 따른 window 크기와 비교해서 둘 중 작은 사이즈로 데이터를 전송한다.
+    > **Window size**
+    > - 상대방에 자신이 얼마나 큰 데이터를 받을 수 있는지 advertise한다. (받는 쪽은 receive window size)
+    > - Socket library로는 setsocketopt로 변경 가능
+    > -  여기서 advertise 된 window size 단위로 데이터가 전송되지 않고, 뒤에 설명하는 혼잡 제어 알고리즘에 따른 window 크기와 비교해서 둘 중 작은 사이즈로 데이터를 전송한다.
 
 - 중간에 거치는 gateway들의 여력: 버퍼 크기 → 받았는지 여부: TCP 헤더 중 **SEQ/ACK**
 
