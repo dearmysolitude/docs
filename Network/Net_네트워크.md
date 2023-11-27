@@ -310,27 +310,131 @@ IP 기능 위에 포트 구분, checksum 기능이 추가된다.
 
 #### Network Congestion(네트워크 혼잡)
 네트워크 경로상의 장비나 회선의 과부화로 traffic을 drop하는 것.
-#### 네트워크 혼잡 제어
+#### 네트워크 혼잡 제어(Congestion control)
 
-Need to start here...
+1. TCP의 congestion control 방법
+
+- 수신자는 data를 받으면 송신자에게 다음에 보낼 SEQ를 요청하는 ACK를 전송한다.
+- 송신자는 한 번에 보낼 수 있는 데이터를 보내고 ACK 를 기다린다.
+- ACK를 받을 때마다 송신자는 **한번에 보낼 수 있는 데이터의 양을 증가**시킨다.
+- ACK가 누락되거나 순서가 뒤집히면 제대로 수신할 수 없는 상황이라고 판단하여,
+    1. 한번에 보낼 수 있는 데이터의 크기를 리셋
+    2. 이전에 보낸 데이터를 재전송한다.
+- 이렇게 한 번에 보내는 데이터의 양을 **congestion window**라고 한다.
+
+2. TCP congestion control의 영향
+
+- 처음부터 full speed로 데이터를 전송하지 않는다.
+- Congestion이라고 생각하면 congestion window의 크기를 줄인다: 전송 속도 감소
+- congestion이 발생하지 않으면 congestion window의 크기를 줄이지 않으므로 congestion이 발생할때까지 속도를 증가시키므로 TCP의 속도는 실제로 오르락내리락 하게 된다.
+
+<div align="center"><img src="./Images/TCPCongestion.png" width="500"></div>
+
+3. Case example
+
+    3-1. TCP로 100 B를 보내려고 할 때, 몇 개의 IP 패킷으로 이동하는가?
+    
+    - 알 수 없음: Congestion window의 크기에 따라 다를 것임
+
+    3-2. 송신 측에서 100B를 보냈다. 수신 측에서 100 B를 읽으려면 100 B가 읽힐까?
+
+    - 알 수 없음: **TCP socket 프로그래밍에서는 이를 반드시 고려한다.**
+
+## 추가 사항: TCP의 Flow control과 Congestion Control
+
+TCP는 IP처럼 end-to-end principle에 따라 설계되었다: 즉 송신자와 수신자 사이에서만 동작하며, 네트워크 자체가 아닌 호스트간의 기능이다.
+
+- Congestion Control: 네트워크 혼잡 상태를 관리하며, congestion window(CWND)를 사용한다. 
+- Flow Control: 수신자의 처리 능력을 고려하여 receiving window를 통해 송신하는 데이터를 조절하여 전송한다: 수신자의 버퍼가 가득 차지 않도록 데이터를 보내는 것으로, 송신자가 너무 빠르게 데이터를 보내서 overwhelming하는 것을 방지하기 위한 것이다.
+
+두 방법 모두, 전송의 효율성과 신뢰성에 큰 영향을 주는 알고리즘으로, 비슷한 알고리즘이지만 목적과 기능이 다르다.
+
+- Sliding window: 종종 flow control과 congestion control을 설명하는 데 모두 사용된다: window단위로 전송하고, 동적으로 절하여 데이터 전송을 관리하기 때문인 것으로 보인다. 
+
+</br>
+
+> </br>
+>
+> **Reminder**
+> 
+> 프로토콜은 통신을 위한 규약으로, 데이터 형식/전송속도/오류 검출/수정 방법 등을 정의한다. 한 쪽에서 이런 형식을 무시하면 통신이 제대로 이루어지지 않을 수 있다.
+>
+> 이는 그 구현은 하드웨어, 운영체제, 네트워크 환경에 따라 다르며, 프로토콜의 규약을 준수하면서도 특정 환경에서 최적의 성능을 달성하기 위해 구현의 세부 사항을 조정할 수 있다는 것을 의미한다: 즉, 네트워크의 성능 최적화와 다양한 네트워크 환경에서의 호환성을 부여하게 된다.
+>
+>가령, 앞서 확인했던 TCP의 flow control과 congestion control의 경우, 진보된 운영체제에서는 혼잡 상태를 더 효과적으로 관리할 수 있는 진보된 알고리즘을 사용하는 것이 그 예일 것이다.
+> </br>
+</br>
 
 ### UDP vs. TCP
 
 - 모두 L4 layer 프로토콜
 - UDP 는 L3 인 IP 를 L4 에서 사용하기 위한 껍데기
 - TCP 는 혼잡 제어와 그 과정 중 재전송 기능 제공
+- 둘 중 빠른 쪽은?
+    - UDP는 요청한 datagram을 즉각적으로 최선을 다해 전송한다.
+    - TCP는 서서히 속도를 올린다. 또, TCP는 누락되는 것을 기다려 재전송한다. 그래서 속도는 더 느릴 수 있다.
+- 결론: 필요에 따라 선택한다.
+    - 누락되어도 상관 없고, 가급적 빠르게 전송해야 하는 경우: UDP
+        - interactive video, audio
+        - 누락되는 것을 대비하여 datagram에 충분한 양의 데이터를 넣는다.
+        - 먼저 보았던 것과 같이 end-to-end로 state를 관리하지 않으므로 연결 기반이 아니다.
+    - 누락되면 안되는 데이터를 안정적으로 전송해야 하는 경우: TCP
+        - file 전송, 인증 처리
+        - 먼저 보았던 것과 같이 end-to-end 의 state를 관리하므로 연결 기반이다.
 
+1Gps L2 스위치에 호스트가 연결되어 있고, UDP 소켓 1 개와 TCP 소켓 1 개를 열고 각각 보낼 수 있는 최고 속도로 전송하는 경우, 그 양태는? steady-state에 도달하는가? 소켓이 차지하는 대역폭은 각각 얼마인가?
 
-<!-- 
+<div align="center"><img src="./Images/UDP-TCP.png" width="500"></div>
+
 ## Client-Server vs. Peer-to-Peer
 
 ### Client-Server 모델
+
+- 작업을 요청하는 쪽(Client)과 작업을 처리하는 쪽(Server)의 구분이 명확함.
+- 서버에서 많은 state를 관리한다.
+    - 유저별 독점적 state: 유저 정보
+    - 유저간 공유 state
+- 어떤 state는 서버가 떠 있는 동안만 유효하나, 어떤 state는 서버가 리부팅 되어도 유효해야한다(Persistence)
+- 이러한 state 관리 목적으로 인해 서버는 어딘가에 호스팅할 수 밖에 없음: 높은 IDC 비용 발생
+    - 서버 비용
+    - 망 비용
+- 클라이언트가 IDC에서 고정적으로 서비스되기 때문에 클라이언트가 접근해야하는 IP와 Port가 명확하다(서비스 bind정보가 고정적이다). 즉, service discovery가 필요하지 않다.
+
+#### 
+
 ### Peer-to-Peer 모델
+
+- 각각 peer가 모두 서버, 클라이언트 역할을 한다.
+- 서비스 제공자는 IDC 비용을 줄일 수 있음.
+- 서버를 거치는 것보다 latency가 "적을수도" 있다.
+- 서비스의 state 저장 방법이 마땅치 않다.
+- 서비스 참여자가 그때그때 서비스 일부를 담당하므로 특정 서비스를 위해 누구에게 접근해야 하는지 명확하지 않다: peer discovery가 필요함.
+
+#### P2P 구현에서의 도전
+
+- 통신 가능성: NAT뒤에 존재할 때 통신이 가능하다는 것을 보장할 수 없음
+- Serive discovery & Peer discovery
+    - Client Servce 구조에서는 처음 접속해야 하는 상대가 명확함
+    - P2P 에서는 알 수 없음
+    - Service discovery: 어디에 가면 서비스를 받을 수 있는지 찾기
+    - Peer discovery: 내 이웃들이 누가 있는지 찾기
+- Churn에 의한 낮은 service stability
+    - Churn: 들락거리는 것
+    - 들락날락할 때마다 새로 peer discovery를 하고 연결을 복구해야 한다.
+    - 서비스 안정성 저해
+
+#### P2P 서비스와 Client-Server 모델에서 latency 차이
+
+- Inter domain의 경우 metric기반이 아닌 policy기반임: 빠른 것이 아니라 domain의 정책에서 발생하는 비효율로 latency가 최단 시간이 걸리지 않음
+- Hop count가 latency를 의미하지 않음
+- application 수준의 hop count와 network 수준의 hop count가 다름
 
 ## NAT(Network Address Translation)
 
+Continue here...
+
 ### NAPT
-### NAT 순회 -->
+### NAT 순회
 
 
 
