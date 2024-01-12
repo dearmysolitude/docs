@@ -35,7 +35,7 @@
 - [리팩토링(JS)](https://product.kyobobook.co.kr/detail/S000001810241)
 
 ### MySQL
-- Real MySQL 8.0 ([1 권]([Real MySQL 8.0 (1권) | 백은빈 - 교보문고 (kyobobook.co.kr)](https://product.kyobobook.co.kr/detail/S000001766482)), [2권]([Real MySQL 8.0 (2권) | 백은빈 - 교보문고 (kyobobook.co.kr)](https://product.kyobobook.co.kr/detail/S000001766483))): 백은빈, 이성욱 저 / 위키 북스
+- Real MySQL 8.0 ([1 권](https://product.kyobobook.co.kr/detail/S000001766482), [2권](https://product.kyobobook.co.kr/detail/S000001766483)): 백은빈, 이성욱 저 / 위키 북스
 - [데이터베이스 인터널스 | 알렉스 페트로프](https://product.kyobobook.co.kr/detail/S000001804998)
 
 ### 시스템 설계
