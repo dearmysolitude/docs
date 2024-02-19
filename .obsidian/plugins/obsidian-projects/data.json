@@ -492,6 +492,57 @@
       ],
       "id": "981089e0-787f-4eec-a35e-00c2426cf93e",
       "name": "Algorithm"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "Linux",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "orderFields": [
+              "name",
+              "path",
+              "excerpt",
+              "Created At",
+              "Tags"
+            ],
+            "fieldConfig": {
+              "path": {
+                "width": 250,
+                "hide": true
+              },
+              "excerpt": {
+                "width": 279
+              }
+            }
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "70149d32-dfc6-4128-b1a3-35c7b33ec2f3",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "5cb21937-ca8d-4d1f-9e84-2410e9ea061d",
+      "name": "Linux"
     }
   ],
   "archives": [],
