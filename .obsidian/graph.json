@@ -60,7 +60,14 @@
       "query": "path:OperatingSystem path",
       "color": {
         "a": 1,
-        "rgb": 14810880
+        "rgb": 7403007
+      }
+    },
+    {
+      "query": "path:Algorithm  ",
+      "color": {
+        "a": 1,
+        "rgb": 1317709
       }
     }
   ],

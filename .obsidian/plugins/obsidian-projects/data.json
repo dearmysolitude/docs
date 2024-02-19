@@ -137,6 +137,9 @@
               },
               "name": {
                 "width": 328
+              },
+              "path": {
+                "hide": true
               }
             },
             "orderFields": [
@@ -184,6 +187,9 @@
             "fieldConfig": {
               "tags": {
                 "width": 557
+              },
+              "path": {
+                "hide": true
               }
             },
             "orderFields": [
@@ -432,6 +438,60 @@
       ],
       "id": "ab32717e-6575-44b0-ad99-d04329210476",
       "name": "Network"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "Algorithm",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "path": {
+                "hide": true
+              },
+              "tags": {
+                "width": 567
+              },
+              "excerpt": {
+                "width": 404
+              }
+            },
+            "orderFields": [
+              "name",
+              "path",
+              "excerpt",
+              "tags",
+              "title",
+              "Created At"
+            ]
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "ce8469da-cf07-4ed8-973b-7cd847a5b6ac",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "981089e0-787f-4eec-a35e-00c2426cf93e",
+      "name": "Algorithm"
     }
   ],
   "archives": [],

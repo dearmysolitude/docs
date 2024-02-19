@@ -4,18 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "b06b30210c532b07",
+        "id": "c1ab1b0f99cbb1a4",
         "type": "tabs",
         "children": [
           {
-            "id": "129fca522fc9791c",
+            "id": "d88646c836e69b4b",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "markdown",
+              "state": {
+                "file": "ProgrammingLanguage/Java/자바 코드의 동작을 JVM 단에서 살펴보자.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "167baa050304b397",
+            "type": "leaf",
+            "state": {
+              "type": "obsidian-projects",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -141,10 +154,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "129fca522fc9791c",
+  "active": "167baa050304b397",
   "lastOpenFiles": [
-    "OperatingSystem/System Structure & Program Execution 01.md",
+    "ProgrammingLanguage/Java/자바 코드의 동작을 JVM 단에서 살펴보자.md",
     "OperatingSystem/README.md",
+    "Algorithm/Time Complexity.md",
+    "Algorithm/Hash Map - 내부 작동.md",
+    "Algorithm/Binary Searh.md",
+    "Algorithm/Stack.md",
+    "Algorithm/Graph.md",
+    "Algorithm/Heap Sort.md",
+    "Algorithm/Hash Table.md",
+    "Algorithm/Queue.md",
+    "OperatingSystem/System Structure & Program Execution 01.md",
     "Framework/README.md",
     "Network/README.md",
     "Network/네트워크 톺아보기.md",
@@ -156,19 +178,10 @@
     "ProgrammingLanguage/Java/wrapper,boxing,unboxing.md",
     "ProgrammingLanguage/Java/JVM.md",
     "ProgrammingLanguage/Java/Java의 설계적결함.md",
-    "ProgrammingLanguage/Java/자바 코드의 동작을 JVM 단에서 살펴보자.md",
     "ProgrammingLanguage/Java/시리즈 04 - 자바 입출력과 네트워크 프로그래밍.md",
     "ProgrammingLanguage/Java/시리즈 03 - 자바 라이브러리.md",
     "ProgrammingLanguage/Java/시리즈 02 - 자바의 객체 지향.md",
     "ProgrammingLanguage/Java/시리즈 01 - 자바 기초.md",
-    "ProgrammingLanguage/C/포인터와 배열, 포인터 연산.md",
-    "1. Books/Clean Code.md",
-    "2. Conference/README.md",
-    "2. Conference/토스ㅣSLASH 22 - 지속 성장 가능한 코드를 만들어가는 방법.md",
-    "3. Mentoring/README.md",
-    "Algorithm/README.md",
-    "Algorithm/DS_해시맵내부작동.md",
-    "DataBase/README.md",
     "ProgrammingLanguage/Java/Basic",
     "_posts/03-2. network",
     "_posts",
