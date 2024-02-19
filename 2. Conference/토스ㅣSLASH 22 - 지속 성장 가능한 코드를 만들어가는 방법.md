@@ -124,6 +124,7 @@ Presentation Layer 에서 Business Layer로 전달할 때 개념화된 클래스
 Layer의 역류가 일어나지 않는다. MobileService가 다른 어떤 개념에 의존적인지도 쉽게 알 수 있다. 
 
 앞선 Layer의 혼선은 장기적으로 코드의 복잡도를 높이고, 확장에 발목을 잡거나 문제를 만들어낸다. 이러한 Layer간의 잠재적 문제를 imort문을 통해서 점검할 수 있다. import도 코드의 일부이며, 지속적으로 검토해야 하는 것것임을 다시 한번 알 수 있다.
+
 ### 3. Module
 
 ![](https://onedrive.live.com/embed?resid=C4F97B3B64AE3E7A%216807&authkey=%21AKSWhBXfKTWSb3k&width=947&height=533)

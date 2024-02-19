@@ -1,0 +1,115 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "fieldConfig": {
+        "subject": {
+          "options": [],
+          "richText": true
+        },
+        "chapter": {}
+      },
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "4 - 5. DataBase",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "name": {
+                "width": 244
+              },
+              "path": {
+                "width": 364,
+                "hide": true
+              },
+              "subject": {
+                "width": 155
+              },
+              "chapter": {
+                "width": 167
+              }
+            },
+            "orderFields": [
+              "subject",
+              "chapter",
+              "name"
+            ]
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": [
+              {
+                "field": "name",
+                "order": "asc",
+                "enabled": true
+              }
+            ]
+          },
+          "id": "7a60c165-b8b2-4061-bdb8-f01e3dcf31ba",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "10c56450-5d59-4c00-acfb-575a3a3d714e",
+      "name": "DB"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "2. Conference",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {},
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "a91aa119-4635-4c12-9bd4-ab69f49c1545",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "82b5de1e-bf5a-4212-b3b8-e26f80ac7ab0",
+      "name": "Conference"
+    }
+  ],
+  "archives": [],
+  "preferences": {
+    "projectSizeLimit": 1000,
+    "frontmatter": {
+      "quoteStrings": "PLAIN"
+    },
+    "commands": [],
+    "linkBehavior": "open-editor"
+  }
+}

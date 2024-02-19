@@ -1,0 +1,193 @@
+{
+  "main": {
+    "id": "c1ee576258cf01af",
+    "type": "split",
+    "children": [
+      {
+        "id": "6fe7c778d1e85c8e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "787ff347fd867f47",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f170aa08c630400f",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e738057bf55eb21",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da9dbe85c624316b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d8e262d331188cde",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c288d886998b7b26",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 332.5110321044922
+  },
+  "right": {
+    "id": "f3619a3373a31fa6",
+    "type": "split",
+    "children": [
+      {
+        "id": "9bbffc973594ec74",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ad97b60a6b66a07e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "34c3739921a2799d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "037c2c0d911daa49",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "cfce0f21f8b39802",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-projects:Open projects": false,
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "787ff347fd867f47",
+  "lastOpenFiles": [
+    "메모.md",
+    "무제 파일.canvas",
+    "DataBase/SQLD/슈퍼 타입과 서브 타입 테이블 병합.md",
+    "DataBase/SQLD/2-5. DB 구조와 성능.md",
+    "DataBase/MySQL FullText Search.md",
+    "DataBase/SQLD/2-6. 분산 DB 데이터에 따른 성능.md",
+    "DataBase/SQLD/2-3. 반정규화와 성능.md",
+    "DataBase/SQLD/1-5. 식별자 Identifier.md",
+    "DataBase/SQLD/1-4. 관계 Relation.md",
+    "DataBase/SQLD/1-2. 엔티티 Entity.md",
+    "DataBase/SQLD/1-1. 데이터 모델링의 이해.md",
+    "1. Books/Clean Code.md",
+    "DataBase/SQLD/2-4. 대용량 데이터와 성능.md",
+    "1. Books/README.md",
+    "Framework/Spring/Spring Data JPA.md",
+    "Framework/Spring",
+    "Framework",
+    "DataBase/SQLD/1-3. 속성 Attribute.md",
+    "DataBase/README.md",
+    "ProgrammingLanguage/README.md",
+    "DataBase/SQLD/2-1. 데이터 모델과 성능.md",
+    "ProgrammingLanguage/Java/Java.md",
+    "ProgrammingLanguage/Python/Python.md",
+    "README.md",
+    "ProgrammingLanguage/Java/Java의 설계적결함.md",
+    "Algorithm/README.md",
+    "Algorithm/DS_해시맵내부작동.md",
+    "Algorithm/MIT 6.006 Introduction to Algorithms/README.md",
+    "ProgrammingLanguage/Python",
+    "ProgrammingLanguage/C",
+    "ProgrammingLanguage/Java",
+    "DataBase/SQLD",
+    "Excalidraw",
+    "Projects - Demo Project",
+    "3. Mentoring/KJ 나만무 - 로드메이커",
+    "Algorithm/MIT 6.006 Introduction to Algorithms",
+    "4 - 5. DataBase/Images/Tt7.png",
+    "Pasted image 20240115001403 1 1.png",
+    "Pasted image 20240115011439 1 1.png",
+    "Pasted image 20240115011104 1 1.png",
+    "Pasted image 20240115010854 1 1.png",
+    "Pasted image 20240115005935 1 1.png",
+    "Pasted image 20240115005053 1 1.png",
+    "Pasted image 20240115010212.png",
+    "Pasted image 20240115010248.png",
+    "Pasted image 20240115010333.png"
+  ]
+}
