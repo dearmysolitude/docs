@@ -8,7 +8,7 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:DataBase/SQLD path:DataBase/SQLD  ",
+      "query": "path:DataBase  ",
       "color": {
         "a": 1,
         "rgb": 15872305
@@ -25,21 +25,42 @@
       "query": "path:\"3. Mentoring\"  ",
       "color": {
         "a": 1,
-        "rgb": 11657298
+        "rgb": 15374815
       }
     },
     {
       "query": "path:\"Algorithm/MIT 6.006 Introduction to Algorithms\"  ",
       "color": {
         "a": 1,
-        "rgb": 9132454
+        "rgb": 11250603
       }
     },
     {
-      "query": "path:ProgrammingLanguage  ",
+      "query": "path:Framework/Spring  ",
       "color": {
         "a": 1,
-        "rgb": 5431473
+        "rgb": 3254835
+      }
+    },
+    {
+      "query": "path:ProgrammingLanguage/Java  ",
+      "color": {
+        "a": 1,
+        "rgb": 15480499
+      }
+    },
+    {
+      "query": "path:Network  ",
+      "color": {
+        "a": 1,
+        "rgb": 5395168
+      }
+    },
+    {
+      "query": "path:OperatingSystem path",
+      "color": {
+        "a": 1,
+        "rgb": 14810880
       }
     }
   ],
@@ -53,6 +74,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.7132754626224481,
+  "scale": 0.42967809143425384,
   "close": true
 }

@@ -16,7 +16,7 @@
       "dataSource": {
         "kind": "folder",
         "config": {
-          "path": "4 - 5. DataBase",
+          "path": "DataBase/SQLD",
           "recursive": false
         }
       },
@@ -36,7 +36,7 @@
                 "width": 155
               },
               "chapter": {
-                "width": 167
+                "width": 139
               }
             },
             "orderFields": [
@@ -66,7 +66,7 @@
         }
       ],
       "id": "10c56450-5d59-4c00-acfb-575a3a3d714e",
-      "name": "DB"
+      "name": "SQLD"
     },
     {
       "fieldConfig": {},
@@ -84,7 +84,13 @@
       "newNotesFolder": "",
       "views": [
         {
-          "config": {},
+          "config": {
+            "fieldConfig": {
+              "name": {
+                "width": 416
+              }
+            }
+          },
           "filter": {
             "conditions": []
           },
@@ -101,6 +107,331 @@
       ],
       "id": "82b5de1e-bf5a-4212-b3b8-e26f80ac7ab0",
       "name": "Conference"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "OperatingSystem",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "tags": {
+                "width": 422
+              },
+              "excerpt": {
+                "width": 651
+              },
+              "title": {
+                "width": 330
+              },
+              "name": {
+                "width": 328
+              }
+            },
+            "orderFields": [
+              "name",
+              "excerpt",
+              "tags",
+              "Created At",
+              "path"
+            ]
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "8e268df5-b34f-4100-bfe3-20c3fb665f4d",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "1340f69e-55d1-4d95-b3a5-460285f35bb2",
+      "name": "Operating System"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "ProgrammingLanguage/Java",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "tags": {
+                "width": 557
+              }
+            },
+            "orderFields": [
+              "name",
+              "path",
+              "excerpt",
+              "tags",
+              "title",
+              "Created At"
+            ]
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "c0228c4e-a1fa-418b-bdef-5d09b3a9994f",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "6d2a6f28-ead8-4324-84ca-4881143128d0",
+      "name": "Java"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "ProgrammingLanguage/C",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "tags": {
+                "width": 280
+              },
+              "path": {
+                "width": 423,
+                "hide": true
+              }
+            },
+            "orderFields": [
+              "name",
+              "path",
+              "categories",
+              "excerpt",
+              "tags",
+              "title",
+              "Created At"
+            ]
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "c7113475-9fb2-4d67-8577-23c1d4005013",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "ac7f4ed3-4e8b-4a68-abd7-cfe95028915a",
+      "name": "C"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "DataBase",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "path": {
+                "hide": true
+              },
+              "excerpt": {
+                "width": 179
+              },
+              "name": {
+                "width": 213
+              }
+            },
+            "orderFields": [
+              "name",
+              "excerpt",
+              "tags",
+              "Created At"
+            ]
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "abc1b25b-543c-4050-9a63-d6e4fbdd6eae",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "5d272947-f532-4851-abed-7735d1f884d3",
+      "name": "DB"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "Framework/Spring",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "path": {
+                "hide": true
+              },
+              "tags": {
+                "width": 697
+              },
+              "excerpt": {
+                "width": 881
+              },
+              "name": {
+                "width": 295
+              }
+            },
+            "orderFields": [
+              "name",
+              "excerpt",
+              "title",
+              "tags",
+              "Created At"
+            ]
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": [
+              {
+                "field": "Created At",
+                "order": "asc",
+                "enabled": true
+              }
+            ]
+          },
+          "id": "0e01a6a3-e857-47e6-891d-fd442c5db786",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "a6ce36af-01b1-4756-b927-893a28f65ba5",
+      "name": "Spring"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "Network",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "orderFields": [
+              "name",
+              "path",
+              "excerpt",
+              "tags",
+              "title",
+              "Created At"
+            ],
+            "fieldConfig": {
+              "path": {
+                "hide": true
+              },
+              "name": {
+                "width": 202
+              },
+              "tags": {
+                "width": 168
+              }
+            }
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "4e5897d6-c912-4527-8d66-fe3110a72dba",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "ab32717e-6575-44b0-ad99-d04329210476",
+      "name": "Network"
     }
   ],
   "archives": [],

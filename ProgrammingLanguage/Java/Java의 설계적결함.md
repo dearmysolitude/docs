@@ -1,21 +1,11 @@
 ---
-description: 자바의 설계적 결함들
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 tags:
   - Java
   - 자바
   - 면접질문
   - Interview
+excerpt: 자바의 설계적 결함들
+Created At: 2024-02-19
 ---
 
 # Java의 설계적결함
