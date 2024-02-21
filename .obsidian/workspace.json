@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "2cc5604317f5aead",
+        "id": "791bde4026d13b93",
         "type": "tabs",
         "children": [
           {
-            "id": "19bdca50b5c707ea",
+            "id": "993df8c29d934311",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "DataBase/SQLD/13. DDL.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5110321044922
+    "width": 332.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "f3619a3373a31fa6",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "DataBase/SQLD/13. DDL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "DataBase/SQLD/13. DDL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "DataBase/SQLD/13. DDL.md"
+              }
             }
           }
         ],
@@ -141,35 +150,35 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "19bdca50b5c707ea",
+  "active": "993df8c29d934311",
   "lastOpenFiles": [
-    "Linux/심볼릭 링크, 하드 링크.md",
-    "Linux/Exit code.md",
-    "ProgrammingLanguage/Java/자바 코드의 동작을 JVM 단에서 살펴보자.md",
-    "Linux",
-    "OperatingSystem/README.md",
-    "Algorithm/Time Complexity.md",
-    "Algorithm/Hash Map - 내부 작동.md",
-    "Algorithm/Binary Searh.md",
-    "Algorithm/Stack.md",
-    "Algorithm/Graph.md",
-    "Algorithm/Heap Sort.md",
-    "Algorithm/Hash Table.md",
-    "Algorithm/Queue.md",
-    "OperatingSystem/System Structure & Program Execution 01.md",
-    "Framework/README.md",
-    "Network/README.md",
-    "Network/네트워크 톺아보기.md",
-    "OperatingSystem/Introduction to Operating Systems.md",
-    "OperatingSystem/Malloc Lab - Memory Allocator 구현.md",
+    "DataBase/SQLD/12. 관계형 DB 개요.md",
+    "README.md",
+    "DataBase/SQLD/13. DDL.md",
+    "DataBase/SQLD/슈퍼 타입과 서브 타입 테이블 병합.md",
+    "DataBase/SQLD/11. 분산 DB 데이터에 따른 성능.md",
+    "DataBase/SQLD/10. DB 구조와 성능.md",
+    "DataBase/SQLD/9. 대용량 데이터와 성능.md",
+    "DataBase/SQLD/8. 반정규화와 성능.md",
+    "DataBase/SQLD/7. 정규화와 성능.md",
+    "DataBase/SQLD/6. 데이터 모델과 성능.md",
+    "DataBase/SQLD/5. 식별자 Identifier.md",
+    "DataBase/SQLD/4. 관계 Relation.md",
+    "DataBase/SQLD/3. 속성 Attribute.md",
+    "DataBase/SQLD/2. 엔티티 Entity.md",
+    "DataBase/SQLD/1. 데이터 모델링의 이해.md",
+    "DataBase/README.md",
+    "ProgrammingLanguage/Java/Java의 설계적 결함.md",
     "ProgrammingLanguage/README.md",
-    "ProgrammingLanguage/Python/Python.md",
-    "ProgrammingLanguage/C/C.md",
-    "ProgrammingLanguage/Java/wrapper,boxing,unboxing.md",
-    "ProgrammingLanguage/Java/JVM.md",
-    "ProgrammingLanguage/Java/Java의 설계적결함.md",
-    "ProgrammingLanguage/Java/시리즈 04 - 자바 입출력과 네트워크 프로그래밍.md",
     "ProgrammingLanguage/Java/시리즈 03 - 자바 라이브러리.md",
+    "ProgrammingLanguage/Java/시리즈 02 - 자바의 객체 지향.md",
+    "ProgrammingLanguage/Java/시리즈 01 - 자바 기초.md",
+    "OperatingSystem/System Structure & Program Execution 01.md",
+    "OperatingSystem/README.md",
+    "Linux/심볼릭 링크, 하드 링크.md",
+    "Framework/Spring/3. Spring 예제 코드 01.md",
+    "Framework/Spring/4. Spring Web MVC의 등장 배경.md",
+    "Linux",
     "ProgrammingLanguage/Java/Basic",
     "_posts/03-2. network",
     "_posts",
