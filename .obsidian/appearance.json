@@ -1,11 +1,11 @@
 {
-  "accentColor": "#66f0a9",
+  "accentColor": "#74be98",
   "theme": "obsidian",
   "cssTheme": "Everforest",
   "interfaceFontFamily": "나눔스퀘어라운드OTF",
   "textFontFamily": "KoPubWorld돋움체",
   "monospaceFontFamily": "Fira Code",
-  "baseFontSize": 17,
+  "baseFontSize": 19,
   "translucency": true,
   "nativeMenus": false
 }
