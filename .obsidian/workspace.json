@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ee581f9ff927d7c6",
+            "id": "41e9f9ff8e2dce57",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataBase/SQLD/13. DDL.md",
+                "file": "DataBase/SQLD/15. TCL.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5110321044922
+    "width": 332.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "f3619a3373a31fa6",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DataBase/SQLD/13. DDL.md",
+                "file": "DataBase/SQLD/15. TCL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DataBase/SQLD/13. DDL.md",
+                "file": "DataBase/SQLD/15. TCL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DataBase/SQLD/13. DDL.md"
+                "file": "DataBase/SQLD/15. TCL.md"
               }
             }
           }
@@ -149,13 +150,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ee581f9ff927d7c6",
+  "active": "41e9f9ff8e2dce57",
   "lastOpenFiles": [
     "DataBase/SQLD/14. DML.md",
+    "DataBase/SQLD/15. TCL.md",
+    "DataBase/SQLD/12. 관계형 DB 개요.md",
+    "README.md",
     "DataBase/SQLD/13. DDL.md",
     "DataBase/SQLD/6. 데이터 모델과 성능.md",
     "ProgrammingLanguage/Java/시리즈 02 - 자바의 객체 지향.md",
-    "DataBase/SQLD/12. 관계형 DB 개요.md",
     "DataBase/SQLD/9. 대용량 데이터와 성능.md",
     "Algorithm/Hash Map - 내부 작동.md",
     "Algorithm/Binary Searh.md",
@@ -176,8 +179,6 @@
     "Framework/Spring/5. Spring Boot.md",
     "Framework/Spring/1. Project, framework and modules.md",
     "Framework/Spring/5 - 2. Spring Boot 기능 2 - 코드 지원.md",
-    "Framework/Spring/5 - 1. Spring Boot 기능 1 - 빌드.md",
-    "README.md",
     "Linux",
     "ProgrammingLanguage/Java/Basic",
     "_posts/03-2. network",
