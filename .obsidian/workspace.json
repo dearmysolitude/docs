@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0905f611dd63d326",
+        "id": "c378c2edb0ebabd8",
         "type": "tabs",
         "children": [
           {
-            "id": "99c416ac3fad36d5",
+            "id": "634bb43fabd04c59",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataBase/SQLD/20. 조인.md",
+                "file": "DataBase/SQLD/25. 데이터 분석 함수.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5110321044922
+    "width": 332.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "f3619a3373a31fa6",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DataBase/SQLD/20. 조인.md",
+                "file": "DataBase/SQLD/25. 데이터 분석 함수.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DataBase/SQLD/20. 조인.md",
+                "file": "DataBase/SQLD/25. 데이터 분석 함수.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DataBase/SQLD/20. 조인.md"
+                "file": "DataBase/SQLD/25. 데이터 분석 함수.md"
               }
             }
           }
@@ -149,34 +150,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "99c416ac3fad36d5",
+  "active": "634bb43fabd04c59",
   "lastOpenFiles": [
+    "DataBase/데이터베이스 기초.md",
+    "DataBase/SQLD/25. 데이터 분석 함수.md",
     "DataBase/SQLD/21. 집합 연산과 관계 연산.md",
-    "DataBase/SQLD/22. 집합 연산자.md",
-    "DataBase/SQLD/20. 조인.md",
+    "DataBase/SQLD/17. 함수.md",
+    "DataBase/SQLD/24. 서브 쿼리.md",
+    "DataBase/SQLD/23. 계층형 질의와 셀프 조인.md",
     "DataBase/SQLD/슈퍼 타입과 서브 타입 테이블 병합.md",
+    "DataBase/SQLD/20. 조인.md",
+    "DataBase/SQLD/22. 집합 연산자.md",
+    "DataBase/SQLD/10. DB 구조와 성능.md",
+    "DataBase/SQLD/12. 관계형 DB 개요.md",
+    "DataBase/SQLD/9. 대용량 데이터와 성능.md",
+    "DataBase/SQLD/8. 반정규화와 성능.md",
+    "DataBase/SQLD/7. 정규화와 성능.md",
+    "DataBase/SQLD/6. 데이터 모델과 성능.md",
     "Framework/Spring/5 - 2. Spring Boot 기능 2 - 코드 지원.md",
     "README.md",
-    "DataBase/SQLD/17. 함수.md",
-    "DataBase/데이터베이스 기초.md",
     "DataBase/동시성(Concurrency).md",
     "DataBase/MySQL FullText Search.md",
     "DataBase/README.md",
-    "DataBase/SQLD/12. 관계형 DB 개요.md",
     "DataBase/SQLD/18. GROUP BY, HAVING.md",
     "DataBase/SQLD/16. WHERE.md",
     "DataBase/SQLD/15. TCL.md",
     "DataBase/SQLD/14. DML.md",
     "DataBase/SQLD/13. DDL.md",
     "DataBase/SQLD/11. 분산 DB 데이터에 따른 성능.md",
-    "DataBase/SQLD/19. ORDER BY.md",
-    "DataBase/SQLD/6. 데이터 모델과 성능.md",
-    "DataBase/SQLD/1. 데이터 모델링의 이해.md",
-    "19. ORDER BY.md",
-    "ProgrammingLanguage/Java/시리즈 02 - 자바의 객체 지향.md",
-    "DataBase/SQLD/9. 대용량 데이터와 성능.md",
-    "Algorithm/Hash Map - 내부 작동.md",
-    "Algorithm/Binary Searh.md",
     "무제 파일.canvas",
     "Linux",
     "ProgrammingLanguage/Java/Basic",
