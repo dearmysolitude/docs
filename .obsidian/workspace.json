@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5110321044922
+    "width": 332.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "f3619a3373a31fa6",
@@ -151,9 +152,11 @@
   },
   "active": "535a650a817d32e5",
   "lastOpenFiles": [
+    "Network/브라우저의 동작(백엔드).md",
     "Network/개발 환경을 위한 네트워크 설정(VMware).md",
-    "Network/WAS와 Web Server.md",
+    "Linux/심볼릭 링크, 하드 링크.md",
     "Network/네트워크 톺아보기.md",
+    "Network/WAS와 Web Server.md",
     "Algorithm/Binary Searh.md",
     "Algorithm/Hash Table.md",
     "Algorithm/Hash Map - 내부 작동.md",
@@ -175,8 +178,6 @@
     "DataBase/SQLD/5. 식별자 Identifier.md",
     "DataBase/SQLD/3. 속성 Attribute.md",
     "DataBase/SQLD/4. 관계 Relation.md",
-    "DataBase/SQLD/2. 엔티티 Entity.md",
-    "DataBase/SQLD/1. 데이터 모델링의 이해.md",
     "무제 파일.canvas",
     "Linux",
     "ProgrammingLanguage/Java/Basic",
