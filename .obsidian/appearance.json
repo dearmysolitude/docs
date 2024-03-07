@@ -6,6 +6,6 @@
   "textFontFamily": "KoPubWorld돋움체",
   "monospaceFontFamily": "Fira Code",
   "baseFontSize": 19,
-  "translucency": true,
+  "translucency": false,
   "nativeMenus": false
 }
