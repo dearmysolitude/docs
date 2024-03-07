@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Linux 03 기본 CLI.md",
+                "file": "Linux/Linux 01 Linux와 개발 환경.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5110321044922,
-    "collapsed": true
+    "width": 272.5
   },
   "right": {
     "id": "f3619a3373a31fa6",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux 03 기본 CLI.md",
+                "file": "Linux/Linux 01 Linux와 개발 환경.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Linux 03 기본 CLI.md",
+                "file": "Linux/Linux 01 Linux와 개발 환경.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Linux 03 기본 CLI.md"
+                "file": "Linux/Linux 01 Linux와 개발 환경.md"
               }
             }
           }
@@ -146,18 +145,20 @@
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-projects:Open projects": false
+      "obsidian-projects:Open projects": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "bbf6fc43181a1704",
   "lastOpenFiles": [
-    "Linux/Linux 02 vm의 네트워크 환경.md",
-    "Linux/Linux 01 Linux와 개발 환경.md",
+    "Linux/심볼릭 링크, 하드 링크.md",
+    "2. Conference/토스ㅣSLASH 22 - 지속 성장 가능한 코드를 만들어가는 방법.md",
+    "1. Books/Clean Code.md",
     "Linux/Linux 03 기본 CLI.md",
     "Linux/Linux 04 파일 시스템 CLI.md",
+    "Linux/Linux 02 vm의 네트워크 환경.md",
+    "Linux/Linux 01 Linux와 개발 환경.md",
     "Linux/README.md",
-    "Linux/심볼릭 링크, 하드 링크.md",
     "Linux/Exit code.md",
     "Network/WAS와 Web Server.md",
     "Network/브라우저의 동작(백엔드).md",
@@ -176,8 +177,6 @@
     "DataBase/SQLD/14. DML.md",
     "DataBase/SQLD/13. DDL.md",
     "DataBase/SQLD/11. 분산 DB 데이터에 따른 성능.md",
-    "DataBase/SQLD/12. 관계형 DB 개요.md",
-    "DataBase/SQLD/10. DB 구조와 성능.md",
     "무제 파일.canvas",
     "Linux",
     "ProgrammingLanguage/Java/Basic",

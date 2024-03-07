@@ -41,7 +41,7 @@ Nppftp 플러그인을 사용한 SFTP 연결
 - `su -userid`:  해당 유저의 권한으로 잠시 접속
 - `su -` = `su -root`
 - `sudo`: 관리자 권한으로 실행
-https://m.blog.naver.com/hj_kim97/222581377831
+[참고: 리눅스 명령어 - 사용자](https://m.blog.naver.com/hj_kim97/222581377831)
 ## Extra: 명령어 도움말
 - `man` 명령어: 명령어의 도움말을 보여준다.
 - `man man`을 입력할 경우 manual 명령에 대한 도움말을 보여준다(!).
