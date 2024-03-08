@@ -10,8 +10,8 @@
 - uid: 사용자를 표시하는 숫자
 - gid: 그룹을 표시하는 숫자
 - `/etc/group`: 그룹 정보
-- `/etc/passwd`: 사용자 정보, 암호는 x로 표시되어 있고 별도로 `/etc/shadow`에
-	- 형식: `username:pw:uid:gid:gecos:homedir:shell`
+- `/etc/passwd`: 사용자 정보, 암호는 x로 표시되어 있고 별도로 `/etc/shadow`에 복호화 되어 있음
+- 형식: `username:pw:uid:gid:gecos:homedir:shell`
 	- `pw`: `/etc/shadow` 파일에서 관리
 	- `gecos`: General Electric Comprehensive Operating System(과거 Unix와의 호환성을 위해 있는 값 ~~없는 셈 치자~~)
 	- `shell`
@@ -74,7 +74,7 @@ Set-UID가 있으면, 이 프로세스를 실행할 때 파일 소유자의 권�
 - 절대적인 방법으로는 세자리 권한 숫자 앞에 4를 붙여 준다. `chmod 4644 [파일 이름]`.
 - 상대적인 방법으로는 `chmod u+s [파일명]`
 ###### 예시
-```
+```bash
 kopo13@kopo13:~$ ls -l /usr/bin/passwd
 -rwsr-xr-x 1 root root 59976 Feb  6 12:54 /usr/bin/passwd
 ```
@@ -92,8 +92,8 @@ Set-GID가 있으면, 이 프로세스를 실행할 때 파일 소유자의 권�
 - 절대적인 방법으로는 세자리 권한 숫자 앞에 1을 붙여준다. `chmod 1777 [파일 이름]`
 - 상대적인 방법으로는 `chmod o+t [파일명]`
 - **기존 권한에 실행 권한이 없으면 T, 있으면 t로 표시된다.**
-#### 예시
-- `chown`/`chgrp`: root계정에서만 가능하다.
+#### 주의
+- `chown`/`chgrp`: root 계정에서만 가능하다.
 - `ls`의 `--color`옵션은 파일 유형에 따라 다른 색을 표시한다.
 	- **검정색:** 일반 파일
 	- **파란색:** 디렉토리
