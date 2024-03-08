@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Linux 01 Linux와 개발 환경.md",
+                "file": "Linux/Linux 05 권한 관리 명령어.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.5
+    "width": 272.5,
+    "collapsed": true
   },
   "right": {
     "id": "f3619a3373a31fa6",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux 01 Linux와 개발 환경.md",
+                "file": "Linux/Linux 05 권한 관리 명령어.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Linux 01 Linux와 개발 환경.md",
+                "file": "Linux/Linux 05 권한 관리 명령어.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Linux 01 Linux와 개발 환경.md"
+                "file": "Linux/Linux 05 권한 관리 명령어.md"
               }
             }
           }
@@ -151,13 +152,13 @@
   },
   "active": "bbf6fc43181a1704",
   "lastOpenFiles": [
+    "Linux/Linux 01 Linux와 개발 환경.md",
     "Linux/심볼릭 링크, 하드 링크.md",
     "2. Conference/토스ㅣSLASH 22 - 지속 성장 가능한 코드를 만들어가는 방법.md",
     "1. Books/Clean Code.md",
     "Linux/Linux 03 기본 CLI.md",
     "Linux/Linux 04 파일 시스템 CLI.md",
     "Linux/Linux 02 vm의 네트워크 환경.md",
-    "Linux/Linux 01 Linux와 개발 환경.md",
     "Linux/README.md",
     "Linux/Exit code.md",
     "Network/WAS와 Web Server.md",
