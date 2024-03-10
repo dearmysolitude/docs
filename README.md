@@ -1,11 +1,9 @@
 ## About This Page
-
 - 개발자로서 가져야 하는 소양부터 컴퓨터 공학, 객체 지향 프로그래밍 등등. 다양한 분야의 자료들을 정리하고자 함.
 - 블로그보다는 이 곳에 올리는 것이 더 낫다고 판단되는 경우 여기에.
 - 좋은 컨퍼런스 영상, 추천 서적, 책의 요약본이나 전공 지식 등등
 - 신입 개발자를 위한 면접 질문들도 정리할 예정.
 - Obsidian 으로 작성함: Obsidian으로 열람하지 않으면 제대로 문서가 표시되지 않음.
-
 > **Note:** 객관적, 공신력 있는 자료를 통해 기술의 이론적 토대를 알지 못하면 기술을 적용한 근거를 설명할 수 없을 것이다(= 기술을 쓰려면 왜 쓰는지 설명할 수 있어야 한다).
 
 ## What to do?
@@ -35,21 +33,29 @@
 - 운영체제: 반효경 교수님 강의
 - 알고리즘 & 자료구조 이론: 부스트캠프 인강
 - 클린 코드
+
 ## 기술 블로그
-
 [손권남님 기술 블로그](https://kwonnam.pe.kr/wiki/root) | [jbee님 기술 블로그(프론트엔드)](https://blog.jbee.io/Home) | [향로님 기술 블로그](https://jojoldu.tistory.com/)
-
 [우아한 형제들 기술 블로그](https://techblog.woowahan.com/) | [토스 기술 블로그](https://toss.tech/) | [당근 기술 블로그](https://medium.com/daangn)
 
 ## 신입 개발자를 위한 기술면접 블로그
-
 [gyoogle님 블로그](https://gyoogle.dev/)
 
 ## 뉴스레터
-
 BytebyteGo
 	가상 면접 사례로 배우는 대규모 시스템 설계 기초 저자, 알렉스 쉬의 블로그/뉴스레터
 
-## 기타
+## 개발 태그
+### 언어 / 프레임워크
+자바
+### 웹
+DNS / SOAP / REST / XHTML / HTTP / TCP/IP  / WebSocket / gRPC
+### 프로그래밍
+클린 코드 / TDD
+### 기술
+Kubernetes / AWS
+### 데이터베이스
+SQL / 엘라스틱 서치 / HIbernate / RDBMS / Redis
 
+## 기타
 [Obsidian 작성에 대한 공식 문서](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax)
