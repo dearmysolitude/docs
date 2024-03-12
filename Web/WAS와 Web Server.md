@@ -34,3 +34,6 @@
 - Failover, failback 처리에 유리하다.
 - 무중단 운영에 유리하다.
 또한, web server와 WAS의 물리적 분리로 인해 SSL에 대한 암복호화 처리를 통한 보안 강화가 필요하다.
+
+## 참고 자료
+[WAS와 웹서버 - 10분 테코톡](https://www.youtube.com/watch?v=mcnJcjbfjrs)

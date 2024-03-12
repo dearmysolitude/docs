@@ -6,7 +6,7 @@
 [[4. Spring Web MVC의 등장 배경]]
 [[5. Spring Boot]]
 ### 개별 주제
-[[Spring Data JPA]]
-[[MVC-request-lifecycle]]
-[[spring-interceptor-resolver]]
-[[spring-strcuture]]
+[[_Spring Data JPA]]
+[[_MVC-request-lifecycle]]
+[[_spring-interceptor-resolver]]
+[[_spring-strcuture]]
