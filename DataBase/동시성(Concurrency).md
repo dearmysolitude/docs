@@ -5,8 +5,6 @@ tags:
   - 동시성
 Created At: 2023-11-23
 ---
-# 톺아보기
-
 ## 트랜잭션Transaction
 
 - DBMS에서 데이터를 다루는 논리적인 작업의 단위.

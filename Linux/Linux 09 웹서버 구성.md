@@ -8,7 +8,7 @@
 - PHP: 웹 서버 프로그래밍 언어, 동작 엔진은 아파치에 플러그인으로 탑재되어 있다.
 <figure style="width: 85%" class="align-center">
   <img src="https://onedrive.live.com/embed?resid=C4F97B3B64AE3E7A%217098&authkey=%21AOdJ59pVflF6Vsw&width=790&height=302" alt="">
-  <figcaption>LAMP</figcaption>
+  <figcaption>LAMP의 작동 원리</figcaption>
 </figure>
 `systemctl`: Ubuntu의 데몬 관리 명령어
 ## Apache

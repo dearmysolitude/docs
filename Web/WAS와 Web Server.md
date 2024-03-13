@@ -23,7 +23,7 @@
 	- 여러 개의 트랜잭션 관리
 기능 2
 	- 비즈니스 로직 처리
-즉, Web server로부터 동적 컨텐츠를 다루기 위해 분리해낸 것이다. 대표적으로 Tomcat이 있다.
+즉, Web server로부터 동적 컨텐츠를 다루기 위해 분리해낸 것이다. 대표적으로 Tomcat / Weblogic / TMAX 등이 있다.
 <figure style="width: 85%" class="align-center">
   <img src="https://onedrive.live.com/embed?resid=C4F97B3B64AE3E7A%217067&authkey=%21ALs8LjS7m-7QQl8&width=858&height=301" alt="">
   <figcaption>WAS</figcaption>
