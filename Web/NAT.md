@@ -1,6 +1,6 @@
 Network Address Translation. 네트워크 주소를 번환하는 것. 네트워크에서 주소, 즉 L3 주소는 IP이므로 NAT는 [[네트워크 주소 체계#^fed353|IP 주소]]를 변환하는 것이다.  하위 네트워크를 구성하는 방법이며 DHCP를 적용하여 간편하게 IP를 배정할 수 있다.
 - DHCP: 네트워크 IP를 접속 시마다 임의로 배정하는 유동 IP 방식. 공유기는 DHCP를 통해 접속하는 PC에 IP 주소를 할당한다.
-- IPv4에는 각 네트워크가 임의로 쓸 수 있는 사설(private)주소 범위가 정의되어 있다: 사설 주소 범위는 각 네트워크 내에서만 유효. [[네트워크 주소 체계#^54b9a2|사설 주소를 만드는 법: 서브넷]]
+- IPv4에는 각 네트워크가 임의로 쓸 수 있는 사설(private)주소 범위가 정의되어 있다: 사설 주소 범위는 각 네트워크 내에서만 유효. [[네트워크 주소 체계#^54b9a2|하위 네트워크: 서브넷]]
 <figure style="width: 85%" class="align-center">
   <img src="https://onedrive.live.com/embed?resid=C4F97B3B64AE3E7A%217086&authkey=%21ANZDQcFsWin4VKw&width=870&height=148" alt="">
   <figcaption>IPv4</figcaption>
@@ -70,4 +70,5 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
   <figcaption>VM ware를 사용하기 위한 포트 포워딩</figcaption>
 </figure>
 ## 게이트웨이
-내부에서 쓰는 IP / 외부에서 쓰는 IP를 가지고 있다.
+- 내부에서 쓰는 IP(사설 IP): 내부망의 호스트들은 이 주소를 보고 있어야한다: 포트 포워딩으로는 정의가 안되겠지 당연히..
+- 외부에서 쓰는 IP(공인 IP)를 가지고 있다.

@@ -18,12 +18,12 @@
 - DB 조회나 다양한 로직 처리를 요구하는 동적 컨텐츠를 제공하기 위해 만들어진 application server
 - HTTP를 통해 컴퓨터, 장치에 애플리케이션을 수행해주는 미들웨어이다.
 - Web Container / Servlet Container 라고도 불린다: JSP, Servlet의 구동 환경이다.
-기능 1
+	기능 1
 	- 프로그램 실행 환경과 DB 접속 기능
 	- 여러 개의 트랜잭션 관리
 기능 2
 	- 비즈니스 로직 처리
-즉, Web server로부터 동적 컨텐츠를 다루기 위해 분리해낸 것이다.
+즉, Web server로부터 동적 컨텐츠를 다루기 위해 분리해낸 것이다. 대표적으로 Tomcat이 있다.
 <figure style="width: 85%" class="align-center">
   <img src="https://onedrive.live.com/embed?resid=C4F97B3B64AE3E7A%217067&authkey=%21ALs8LjS7m-7QQl8&width=858&height=301" alt="">
   <figcaption>WAS</figcaption>
