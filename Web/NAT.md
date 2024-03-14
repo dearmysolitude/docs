@@ -1,3 +1,6 @@
+[NAT - MS learn](https://learn.microsoft.com/ko-kr/azure/rtos/netx-duo/netx-duo-nat/chapter1)
+[NAT - 테크유람 brunch](https://brunch.co.kr/@sangjinkang/61)
+[NAT - GeeksForGeeks](https://www.geeksforgeeks.org/network-address-translation-nat/)
 Network Address Translation. 네트워크 주소를 번환하는 것. 네트워크에서 주소, 즉 L3 주소는 IP이므로 NAT는 [[네트워크 주소 체계#^fed353|IP 주소]]를 변환하는 것이다.  하위 네트워크를 구성하는 방법이며 DHCP를 적용하여 간편하게 IP를 배정할 수 있다.
 - DHCP: 네트워크 IP를 접속 시마다 임의로 배정하는 유동 IP 방식. 공유기는 DHCP를 통해 접속하는 PC에 IP 주소를 할당한다.
 - IPv4에는 각 네트워크가 임의로 쓸 수 있는 사설(private)주소 범위가 정의되어 있다: 사설 주소 범위는 각 네트워크 내에서만 유효. [[네트워크 주소 체계#^54b9a2|하위 네트워크: 서브넷]]
