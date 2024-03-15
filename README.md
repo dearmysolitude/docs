@@ -44,7 +44,7 @@
 
 ## 신입 개발자를 위한 기술면접 블로그
 [gyoogle님 블로그](https://gyoogle.dev/)
-
+[황원철님 블로그](https://wch18735.github.io/)
 ## 뉴스레터
 BytebyteGo
 	가상 면접 사례로 배우는 대규모 시스템 설계 기초 저자, 알렉스 쉬의 블로그/뉴스레터

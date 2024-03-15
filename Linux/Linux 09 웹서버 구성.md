@@ -12,10 +12,10 @@
 </figure>
 `systemctl`: Ubuntu의 데몬 관리 명령어
 ## Apache
-Sites-enabled 설정: symbolic link로 되어있다
-
-
-## Extra: 웹 개발
-HTML(Hyper Text Markup Language): 문서의 연결[HTML - Mdn](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
-CSS(Cascading Style Sheet): 페이지의 스타일 
-JS(Java Script)
+- Sites-enabled 설정: symbolic link로 되어있다.
+- 기본적인 설정은 
+## Extra: 웹 개발의 시작
+HTML(Hyper Text Markup Language): 문서의 연결, 하이퍼링크[HTML - Mdn](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
+CSS(Cascading Style Sheet): 페이지의 스타일을 설정 
+JS(Java Script): 보다 복잡한 작업의 수행
+...
