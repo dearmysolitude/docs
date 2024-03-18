@@ -1,6 +1,7 @@
 ## Extra: RAID
 Redundunt Array of Inexpensive Disks. HPC(High Performance Computing)의 현실적인 사용이 어려운 대다수 사업환경에서 RAID를 사용하여 전산망을 구성하게 된다.
 RAID 구분 / 용량 계산 정도는 기본적으로 숙지하고 지나가자.
+https://hihighlinux.tistory.com/64
 ### RAID 0
 초기 RAID. 블록 레벨 striping 방식을 사용한다.
 ### RAID 1
