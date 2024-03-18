@@ -1,4 +1,5 @@
 ## 가상화
+
 <figure style="width: 85%" class="align-center">
   <img src="https://onedrive.live.com/embed?resid=C4F97B3B64AE3E7A%217103&authkey=%21AHT9k1OLhSP0_4U&width=1600&height=1360" alt="">
   <figcaption>가상화의 발전</figcaption>
@@ -13,6 +14,16 @@ LXC(리눅스 컨테이너라)는 커널 컨테이너 기술을 이용하여 만
   <figcaption>Docker와 VM</figcaption>
 </figure>
 Docker는 완전히 새로운 기술이 아니며, 이미 존재하는 기술을 잘 포장했다고 볼 수 있다. 이미 존재하는 기술을 docker 가 잘 조합하고 사용하기 쉽게 만들었으며 사용자들이 원하는 기능을 간단하지만 획기적인 아이디어로 구현하였다.
+리눅스 커널의 Cgroup(Control Groups)과 네임스페이스 기능을 이용해서 구현되어 있다. 이를 통해 다른 프로세스 사이에 벽을 만든다. 따라서 위 그림이 잘못되었다고 말하기도 한다: 도커 컨테이너는 커널을 공유하고 있고 커널에서 자원가 프로세스 결리가 이루어지므로 도커 데몬이 프로세스처럼 operating system 위에 올라야 한다고도 말한다(아래 그림처럼).
+<figure style="width: 85%" class="align-center">
+  <img src="https://onedrive.live.com/embed?resid=C4F97B3B64AE3E7A%217722&authkey=%21AM3arW1yLRTaim4&width=1155&height=511" alt="">
+  <figcaption>실제 Docker의 모양?</figcaption>
+</figure>
+그러나 도커 컨테이너들은 리눅스 커널을 사용한다. 리눅스 커널을 사용하여 VM처럼 작동하지만 더이상 Guest OS는 필요 없는 것이다. 이를 그림으로 더 정확히 나타내면 다음과 같다.
+<figure style="width: 85%" class="align-center">
+  <img src="https://onedrive.live.com/embed?resid=C4F97B3B64AE3E7A%217723&authkey=%21AHgeeX4DYWLMrwo&width=556&height=430" alt="">
+  <figcaption>좀 더 사실에 가까운 Docker의 구조</figcaption>
+</figure>
 ### Container
 기존의 가상화(Virtual Machine; VM)는 OS를 가상화 하였다: OS가 올라가다보니 사용법이 간단하지만 무겁고 느리다. **성능을 개선하기 위해 격리된 공간에서 process가 동작하는 방식의 가상화를 Linux container라고 한다.**
 - 가볍고 빠르며 CPU나 메모리는 process가 필요한 만큼만 추가로 사용한다.
