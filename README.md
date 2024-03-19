@@ -12,54 +12,100 @@
 	2: 작성 예정인 문서
 ## What to do?
 ### 포트폴리오
-#### 로드메이커 정리 
-- 적용 기술:  보완과 이론 학습으로 채우기
-	- Spring Boot 프로젝트의 Blue/Green 자동 CI/CD(Github Actions / NginX): 구축 과정에서 발생한 문제와 해결 과정
-	- Github Actions 사용시 Application.yml(민감한 정보)의 관리 방법: 서브 모듈
-	- Spring Boot 일반 개념
-	- Spring Security: JWT ( + 시간이 된다면 OAuth 2.0 해보고 싶다. )
-	- GPT API의 멀티스레딩 호출
-	- 게시판과 댓글의 CRUD: 페이지네이션의 경우 DB에서 어떻게 데이터를 가져오고 보내주어야 효율적인지 확인해보자. 이를 바탕으로 리팩터링 필요함.
-	- JPA를 사용한 데이터 불러오기
-	- DB 스키마 설계에 참여: 이 경험에서 뭘 얻었지?
-	- Spring Interceptor와 Spring Resolver: 사용자 정의 annotation 만들기: 로그인 유저 판별
-	- 로드맵에 대한 내용은 클론 코딩에 가깝다: 매우 복잡함. 이건 어떻게 해야하나
-- 추가
-	- Elastic Search
-	- ==**리팩터링: 제대로 된 코드로 만들기**==
-	- 테스트 코드 적용
-- 서비스 ~~불가능~~
-#### 미니 프로젝트
-- TODO 애플리케이션(Spring)
-- 채팅 프로그램(Java)
+#### KJ 나만무: 로드메이커 
+ChatGPT API를 사용한 프로그래머 학습 로드맵 작성 서비스
+- Github: https://github.com/road-maker/road-maker-spring
+- 프로젝트 회고 및 기타 정보(개인 자료): [[로드메이커 관련 정보]]
+#### TODO 애플리케이션
+Spring Framework를 사용한 TODO 애플리케이션
+#### 토이 프로젝트
+- 채팅 프로그램(Java): 자바 네트워크
+- 숫자야구 게임(Java): 단위테스트
+- 자동차 경주(Java): TDD
+- 좌표 계산기(Java): 상속, 인터페이스
+- 블랙잭(Java): 함수형 프로그래밍
 ### 공부
 - 네트워크: <네트워킹 프로그래밍: 하향식 접근>
 - 운영체제: 반효경 교수님 강의
 - 알고리즘 & 자료구조 이론: 부스트캠프 인강
-- 클린 코드
-
+- 정보처리기사
 ## 기술 블로그
 [손권남님 기술 블로그](https://kwonnam.pe.kr/wiki/root) | [jbee님 기술 블로그(프론트엔드)](https://blog.jbee.io/Home) | [향로님 기술 블로그](https://jojoldu.tistory.com/)
 [우아한 형제들 기술 블로그](https://techblog.woowahan.com/) | [토스 기술 블로그](https://toss.tech/) | [당근 기술 블로그](https://medium.com/daangn)
-
 ## 신입 개발자를 위한 기술면접 블로그
 [gyoogle님 블로그](https://gyoogle.dev/)
 [황원철님 블로그](https://wch18735.github.io/)
 ## 뉴스레터
-BytebyteGo
-	가상 면접 사례로 배우는 대규모 시스템 설계 기초 저자, 알렉스 쉬의 블로그/뉴스레터
-
-## 개발 태그
+[BytebyteGo](https://bytebytego.com/): 가상 면접 사례로 배우는 대규모 시스템 설계 기초 저자, 알렉스 쉬의 블로그/뉴스레터
+## 주제별 기본 개념
+### CS 기초
+- 32 bit와 64 bit
+- 실수 표현법(부동 소수점)
+- Stack / Heap, 메모리 구조
+- jpg, png, gif
+- 2의 보수와 1의 보수
+## malloc
+- implicit, explicit, seglist, buddy system
+- Fragmentation
+### Algorithm/DS
+- [[Time Complexity|시간복잡도]]
+- Recursion, Iteration
+- Linked List, Array
+- 정렬(Sort)
+- Hash Table(Collision/Rehashing)
+- Dynamic Programming, Greddy Algorithm
+- 균형 이진트리 Balanced BST
+	- AVL
+	- RBTree
+### OS
+- OS의 정의
+- Process와 Thread
+- CPU Scheduling 알고리즘
+- Semaphore와 Mutex
+- Race Condition
+- Deadlock
+- Context Switching
+- System Call
+- Kernel
+- Atomic Operation
+- 가상 메모리
+- 페이징 기법
+- Cache
+- TLB
+- Page Fault
+### 네트워크
+- BSD 소켓
+- 프록시 서버
+- [[네트워크 톺아보기|TCP/IP]]
+- HTTP
+- File Descriptor
+- DNS
+- REST API
+- GET.POST, DELETE, UPDATE
+- SOAP
+- XHTML
+- WebSocket
+- gRPC
 ### 언어 / 프레임워크
-자바
-### 웹
-DNS / SOAP / REST / XHTML / HTTP / TCP/IP  / WebSocket / gRPC
+#### 자바
+- [[JVM|JVM 구조]]
+- Garbage Collector
+#### C
+- [[포인터와 배열, 포인터 연산|포인터와 배열]]
+- 스마트 포인터
 ### 프로그래밍
-클린 코드 / TDD
-### 기술
-Kubernetes / AWS
+- 클린 코드
+- TDD
+### 기술/아키텍처
+- [[Docker]]
+- Kubernetes
+- AWS
 ### 데이터베이스
-SQL / 엘라스틱 서치 / HIbernate / RDBMS / Redis
-
+- RDBMS
+- NoSQL
+- 엘라스틱 서치
+- HIbernate
+- DB Index
+- Redis
 ## 기타
 [Obsidian 작성에 대한 공식 문서](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax)
