@@ -39,7 +39,7 @@ Spring Framework를 사용한 TODO 애플리케이션
 - Stack / Heap, 메모리 구조
 - jpg, png, gif
 - 2의 보수와 1의 보수
-## malloc
+### malloc
 - implicit, explicit, seglist, buddy system
 - Fragmentation
 ### Algorithm/DS

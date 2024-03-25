@@ -106,15 +106,12 @@ def print_each(li):
 def binary_search(li, item, first=0, last=None):
 	if not last:
 		last = len(li)
-
 	midpoint = (last - first) / 2 + first
-
+	
 	if li[midpoint] == item:
 		return midpoint
-
 	elif li[midpoint] > item:
 		return binary_search(li, item, first, midpoint)
-
 	else:
 		return binary_search(li, item, midpoint, last)
 ```
@@ -192,16 +189,16 @@ def fibonacci(n):
         return
     if n <= 1:
         return n
-
+    
     result = 0
     f1 = 0
     f2 = 1
-
+    
     for _ in range(2, n + 1):
         result = f1 + f2
         f1 = f2
         f2 = result
-
+    
     return result
 ```
 
