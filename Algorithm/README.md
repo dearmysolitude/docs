@@ -3,14 +3,21 @@ Created At: 2024-02-19
 ---
 [[Algorithm/MIT 6.006 Introduction to Algorithms/README|MIT 6.006 Introduction to Algorithms]]
 
-## 자료구조
+## Data Structure
 [[Hash Table]]
 [[Hash Map]]
 [[Queue]]
 [[Stack]]
 [[Graph]]
 
-## 알고리즘
+## Algorithm
 [[Time Complexity]]
 [[Binary Searh]]
-[[Heap Sort]]
+### Sorting Algorithm
+- Insert Sort
+- Selection Sort
+- Bubble Sort
+- Shell Sort
+- Quick Sort
+- [[Heap Sort]]
+- Merge Sort

@@ -69,23 +69,98 @@ def pop(self)
 				print("stack is empty")
 ```
 
-# Stack을 이용한 계산기
+## 스택: 계산기 구현
 
-## infix 와 postfix
+```python
+import sys
 
+prec = {
+    '*': 3, '/': 3,
+    '+': 2, '-': 2,
+    '(': 1
+}
+
+def join_array(ints):
+    str_list = list(map(str, ints))
+    return " ".join(str_list)
+
+class ArrayStack:
+    def __init__(self):
+        self.data = []
+    def size(self):
+        return len(self.data)
+    def isEmpty(self):
+        return self.size() == 0
+    def push(self, item):
+        self.data.append(item)
+    def pop(self):
+        return self.data.pop()
+    def peek(self):
+        return self.data[-1]
+    def serialize(self):
+        return join_array(self.data)
+
+def convert_to_postfix(S):
+    opStack = ArrayStack()
+    answer = ''
+    for w in S :
+        if w in prec :
+            if opStack.isEmpty() :
+                opStack.push(w)
+            else :
+                if w == '(' :
+                    opStack.push(w)
+                else :
+                    while prec.get(w) <= prec.get(opStack.peek()) :
+                        answer += opStack.pop()
+                        if opStack.isEmpty() : break
+                    opStack.push(w)
+        elif w == ')' :
+            while opStack.peek() != '(' :
+                answer += opStack.pop()
+            opStack.pop()
+        else :
+            answer += w
+    while not opStack.isEmpty() :
+        answer += opStack.pop()
+    return answer
+
+def calculate(tokens):
+    stack = ArrayStack()
+    for token in tokens:
+        if token == '+':
+            stack.push(stack.pop()+stack.pop())
+        elif token == '-':
+            stack.push(-(stack.pop()-stack.pop()))
+        elif token == '*':
+            stack.push(stack.pop()*stack.pop())
+        elif token == '/':
+            rv = stack.pop()
+            stack.push(stack.pop()//rv)
+        else:
+            stack.push(int(token))
+        
+    return stack.pop()
+
+# infix 수식에서 공백 제거
+infix = sys.stdin.readline().replace("\n", "").replace(" ", "")
+postfix = convert_to_postfix(infix)
+print(f"postfix : {postfix}")
+result = calculate(postfix)
+print(f"result : {result}")
+```
+### infix 와 postfix
 infix는 사람들이 사용하는 이항 연산자를 가운데에다가 적는 형식을 말한다면, postfix는 이항 연산자를 피연산자 두개의 바로 뒤에 적음으로써 컴퓨터가 연산을 용이하게 진행하는데에 도움을 준다.
-
-**infix → postfix**
-
+#### infix → postfix
 1. 두 피연산자를 묶는 괄호를 만든다.
 2. 오른쪽 괄호 바깥쪽에 가운데에 있던 연산자를 옮겨 준다.
 3. 괄호를 없앤다.
 
-$3*(2+5)*4$ <infix> → $3*(25+)*4$ →  $325+*4*$
+> 3*(2+5)\*4 → 3*(25+)\*4 →  325+\*4*
 
 컴퓨터가 infix를 postfix로 바꾸는 과정과 postfix로 만들어진 식 모두 스택을 활용하여 계산이 진행된다.
 
-**infix를 postfix로 바꾸는 과정**
+#### infix를 postfix로 바꾸는 과정
 
 리스트: outstack <<postfix저장/ 스택: opstack <<연산자 저장
 
@@ -104,5 +179,12 @@ for each token in expression:
 ```
 
 **postfix의 수식을 계산하기**: 연산자가 나오면 피연산자 두개를 pop하여 순서에 맞춰 계산한 후 결과를 push한다.
+<figure style="width: 85%" class="align-center">
+  <img src="https://onedrive.live.com/embed?resid=C4F97B3B64AE3E7A%216751&authkey=%21AOlCWjiEuG_jXUI&width=721&height=961" alt="">
+  <figcaption>infix → postfix</figcaption>
+</figure>
 
-계산기 코드는 반드시 만들어 볼 것!
+<figure style="width: 85%" class="align-center">
+  <img src="https://onedrive.live.com/embed?resid=C4F97B3B64AE3E7A%216752&authkey=%21AMnPDo_jFC608rE&width=721&height=961" alt="">
+  <figcaption>Calculator</figcaption>
+</figure>
