@@ -58,31 +58,33 @@ public class BeanFactoryMain() {
         // 이 클래스의 이름이 무엇인지는 알 수 없음.
         // 나중에 알게 될 것임.
         // a() 메서드를 실행할 수 있도록 코드를 작성하시오. 
-
         // 1. 클래스 이름으로 들어갈 String
         String className = "com.example.Bus";
-        // 2. className에 해당하는 클래스 정보를 CLASSPATH에서 읽어들여서 clazz에서 참조한다. 
+// 2. className에 해당하는 클래스 정보를 CLASSPATH에서 읽어들여서 clazz에서 참조한다. 
         Class clazz = Class.forName(className);
-
-        Method[] declaredMethods = clazz.getDeclaredMethod(); // 클래스에서 메서드들을 객체로 가져옴
+        
+	// 클래스에서 메서드들을 객체로 가져옴
+        Method[] declaredMethods = clazz.getDeclaredMethod(); 
         for(Method m :  declaredMethods) {
             System.out.println(m.getName()); 
         }
         
-        // 3. 클래스 정보를 참조하여 객체를 생성한다: 이제, 메서드는 어떻게 사용할 수 있을까?
+    // 3. 클래스 정보를 참조하여 객체를 생성한다: 이제, 메서드는 어떻게 사용할 수 있을까?
         Object o = clazz.newInstance();
-
-        // 3-1. Bus 객체를 가져와 형변환하여 메서드 사용.
+        
+    // 3-1. Bus 객체를 가져와 형변환하여 메서드 사용.
         Bus b = (Bus)o; 
         b.a(); 
-
-        // 3-2. Bus가 Car의 부모 클래스일 때: a 메서드는 오버라이드된 Bus의 a()가 사용된다.
+        
+    // 3-2. Bus가 Car의 부모 클래스일 때: a 메서드는 오버라이드된 Bus의 a()가 사용된다.
         Car b = (Car)o; 
         b.a(); 
-
-        // 3-3. 메서드도 Java Reflection으로 런타임 시에 불러올 수 있다: Bus가 아니더라도, Car의 자식 클래스가 아니더라도 가능함
-        Method m = clazz.getDeclaredMethod("a", null); // a 메서드에 대한 정보를 가지고있는 Method를 반환하라: "a"는 메서드 이름, null은 parameterTypes
-        m.invoke(o, null); // Object o가 참조하는 객체의 m 메서드를 실행하라. null은 args
+        
+// 3-3. 메서드도 Java Reflection으로 런타임 시에 불러올 수 있다: Bus가 아니더라도, Car의 자식 클래스가 아니더라도 가능함
+// a 메서드에 대한 정보를 가지고있는 Method를 반환하라: "a"는 메서드 이름, null은 parameterTypes
+        Method m = clazz.getDeclaredMethod("a", null);
+// Object o가 참조하는 객체의 m 메서드를 실행하라. null은 args
+        m.invoke(o, null); 
     }
 }
 ```
@@ -95,7 +97,7 @@ public class BeanFactoryMain() {
 
 [펙토리 메서드 패턴]({% post_url 2023-12-11-java-factory-method-pattern %})
 
-→ 클래스 이름만 가지고 인스턴스를 만드는 동작을 구현할 수 있다
+→ 클래스 이름만 가지고 인스턴스를 만드는 동작을 구현할 수 있다.
 
 Spring 같은 경우도 Bean 생성 시 사용되는 패턴임. 물론 더 고차원적인 많은 가공을 사용하여 편의를 제공하는 것이다.
 
