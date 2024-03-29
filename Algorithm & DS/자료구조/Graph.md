@@ -10,11 +10,8 @@ Created At: 2023-04-27
 1. 그래프의 자료구조에 대한 이해: dense graph / sparse graph에 대해 자료 구조를 적용할 수 있어야 함
 2. 작동 방법: **BFS / DFS**
 3. 그래프를 이용한 알고리즘의 이해
-    
 [Dijkstra & Bellman-Ford](https://www.notion.so/Dijkstra-Bellman-Ford-d478400531904a5d9eb1fc4ece2869eb?pvs=21): 최단 경로 찾기
-
 [MST](https://www.notion.so/MST-5fea75bb7bfa44d3a4f6a2d18d279de9?pvs=21): 최적 경로 산출
-    
 
 ## List / Tree / Graph
 
