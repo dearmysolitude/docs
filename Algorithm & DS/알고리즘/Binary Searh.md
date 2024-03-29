@@ -15,9 +15,7 @@ Created At: 2023-04-18
 - `mid`: 반으로 나눈 구간 중 어느쪽을 탐색해야 할 지 판단하는 조건
 
 ## 구현을 위해 생각해야 하는 것
-
 ### 경계 조건과 pivot
-
 1. 경계 조건을 잡기 위해 left와 right을 잡는다. 모든 index들은 inclusive range인 `[left, right]`안에서 모두 찾을 수 있다. 보통 `left ≤ right`의 조건을 사용하는 while문을 사용한다.
 2. pivot point를 잡는다: 중간 `index`를 통해 중간의 값`nums[mid]`을 구하고, 이를 target과 비교하여 어느 쪽에 target이 있을지 판단한다.
 3. 분기 조건
@@ -48,9 +46,7 @@ target을 찾지 못하고 끝나면, -1을 반환한다.
 ## Complexity Analysis
 
 nums의 크기를 n이라고 할 때,
-
 시간복잡도: $O(logn)$
-
 nums는 시간마다 둘로 나뉘어진다. 최악의 경우, 원소가 없을 때 까지 계속해서 잘라야 한다.(logarithmic time)
 
 공간복잡도: $O(1)$
