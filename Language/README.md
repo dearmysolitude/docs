@@ -12,6 +12,7 @@
 [[Comparator & Comparable]]
 [[wrapper,boxing,unboxing]]
 ### 참고 자료
+[Java 21의 새로운 기능: Virtual Thread](https://techblog.woowahan.com/15398/#toc-7)
 [Stephan Johansson - Oracle Engineer](https://kstefanj.github.io/)
 ## Python
 ## C
