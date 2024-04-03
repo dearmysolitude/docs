@@ -25,7 +25,10 @@ Spring Framework를 사용한 TODO 애플리케이션
 - 알고리즘 & 자료구조 이론: 부스트캠프 인강
 - 정보처리기사
 ## 기술 블로그
+[여러분의 CS 교육에서 누락된 학기](https://missing-semester-kr.github.io/)
+
 [손권남님 기술 블로그](https://kwonnam.pe.kr/wiki/root) | [jbee님 기술 블로그(프론트엔드)](https://blog.jbee.io/Home) | [향로님 기술 블로그](https://jojoldu.tistory.com/)
+
 [우아한 형제들 기술 블로그](https://techblog.woowahan.com/) | [토스 기술 블로그](https://toss.tech/) | [당근 기술 블로그](https://medium.com/daangn)
 ## 신입 개발자를 위한 기술면접 블로그
 [gyoogle님 블로그](https://gyoogle.dev/)
