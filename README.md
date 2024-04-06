@@ -1,17 +1,16 @@
 ## About This Page
 - 개발자로서 가져야 하는 소양부터 컴퓨터 공학, 객체 지향 프로그래밍 등등. 다양한 분야의 자료들을 정리하고자 함.
-- 단순 학습 내용은 Obsidian 문서에, 문제 해결 과정의 서술이 필요한 경우에는 [블로그]()에 작성함.
+- 학습 내용은 Obsidian 문서에, 문제 해결 과정의 서술이 필요한 경우에는 [블로그](https://luciddevlog.kr/)에 작성함.
 - 좋은 컨퍼런스 영상, 추천 서적, 책의 요약본이나 전공 지식 등등
-- 신입 개발자를 위한 면접 질문들도 정리할 예정.
 - Obsidian 으로 작성함: Obsidian으로 열람하지 않으면 제대로 문서가 표시되지 않음.
 > **Note:** 객관적, 공신력 있는 자료를 통해 기술의 이론적 토대를 알지 못하면 기술을 적용한 근거를 설명할 수 없을 것이다(= 기술을 쓰려면 왜 쓰는지 설명할 수 있어야 한다).
 ### 현재의  관심사
-- 학습 방법: 과제를 통한 문제 해결과 보다 깊은 주제로의 확장.
+- 학습 방법: 과제를 통한 문제 해결과 자연스러운 깊은 주제로의 확장.
 - 정보 습득: 공식 문서와 전문가들의 글, 컨퍼런스 등을 통한 보다 전문적인 지식 습특
 - 오픈 소스 기여: 간단한 번역 부터
 #### 개발
-- Java: 함수형 프로그래밍, 동적 프록시
-- Spring Framework & Spring Boot
+- Java: 함수형 프로그래밍, 동적 프록시, Wrapping, boxing, unboxing
+- Spring Framework & Spring Boot: 프레임워크의 구조와 원리
 - 클린 코드, TDD
 #### Computer Science
 - 네트워크: ⌈네트워킹 프로그래밍: 하향식 접근⌋
@@ -34,6 +33,7 @@ Spring Framework를 사용한 TODO 애플리케이션
 ## 기술 블로그
 ### Open Courseware
 - [여러분의 CS 교육에서 누락된 학기](https://missing-semester-kr.github.io/)
+- 
 ### Tech Leader 기술 블로그
 - [손권남님 기술 블로그](https://kwonnam.pe.kr/wiki/root)
 - [jbee님 기술 블로그(프론트엔드)](https://blog.jbee.io/Home)
