@@ -33,10 +33,10 @@ Spring Framework를 사용한 TODO 애플리케이션
 ## 기술 블로그
 ### Open Courseware
 - [여러분의 CS 교육에서 누락된 학기](https://missing-semester-kr.github.io/)
-- 
+- [Introduction to Algorithms - MIT](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)
 ### Tech Leader 기술 블로그
 - [손권남님 기술 블로그](https://kwonnam.pe.kr/wiki/root)
-- [jbee님 기술 블로그(프론트엔드)](https://blog.jbee.io/Home)
+- [jbee님 기술 블로그(프론트엔드)](https://blog.jbee.io)
 - [향로님 기술 블로그](https://jojoldu.tistory.com/)
 ### Tech 기업 기술 블로그
 - [우아한 형제들 기술 블로그](https://techblog.woowahan.com/)
