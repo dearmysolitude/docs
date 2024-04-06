@@ -33,6 +33,10 @@ Created At: 2024-01-28
 - 하지만, 일반적인 메서드보다 오버헤드가 크다.
 - 동적 바인딩과 메타데이터 접근에 따른 비용이 발생한다. 
 - 코드의 가독성과 유지보수성이 저하될 수 있다.
+- [p] checkbox
+- [c] wooooooo
+- [i] 
+- [x] done!
 ### 클래스 로더를 이용한 인스턴스 생성
 ```java
 public class BeanFactoryMain() {
