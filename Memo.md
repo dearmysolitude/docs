@@ -1,0 +1,11 @@
+- [p] checkbox
+- [c] wooooooo
+- [i] 알림
+- [I] sdfa
+- ["] sdf
+- [n] sdf
+- [u] sdf 
+- [1] hello!
+- [2] Hi!
+
+- [x] done!
