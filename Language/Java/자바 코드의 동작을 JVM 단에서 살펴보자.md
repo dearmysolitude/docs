@@ -70,19 +70,19 @@ public class CarExample {
 - 오버로딩된 메서드를 다룰 때 컴파일러는 내부적으로 매개변수 타입을 메서드 이름에 명시하여 구분한다. 따라서 매개변수의 종류와 수가 다른 메서드만 오버로드 할 수 있는 것이다.
 - 생성자 오버로딩이 많아질 경우 생성자 간의 중복된 코드가 발생할 수 있음: this() 예약어를 사용하면 원하는 생성자를 불러올 수 있다: 내 클래스의 다른 생성자를 불러올 수 있다.
 ```java
-Car(String model) {
+	Car(String model) {
 		this(model, "은색", 250);
-}
-
-Car(String model, String color) {
+	}
+	
+	Car(String model, String color) {
 		this(model, color, 250);
-}
-
-Car(String moedel, String color, int maxSpeed) {
+	}
+	
+	Car(String moedel, String color, int maxSpeed) {
 		this.model = model;
 		this.color = color;
 		this.maxSpeed = maxSpeed;
-}
+	}
 ```
 이 코드에서 맨 마지막 메서드가 중심 내용을 구현하고 있다. 위의 두 메서드는 이 메서드를 감싸는 래핑 메서드로 **단일 책임 원칙**을 적용하고자 이런 방식으로 구현한 것이다. 이렇게 구현하면 코드의 유지 보수가 용이하고 코드의 유연성이 증가한다.
 
