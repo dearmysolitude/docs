@@ -1,5 +1,4 @@
 활동을 하면서 멘토 분들에게 추천 받은 서적들(**링크는 교보 문고**).
-
 ## Computer Science
 
 - [로버트 나이스트롬의 인터프리터 in Java, C | 로버트 나이스트롬](https://product.kyobobook.co.kr/detail/S000211521372)
