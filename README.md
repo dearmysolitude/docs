@@ -19,11 +19,17 @@ Spring Framework를 사용한 TODO 애플리케이션
 - 자동차 경주(Java): TDD
 - 좌표 계산기(Java): 상속, 인터페이스
 - 블랙잭(Java): 함수형 프로그래밍
-### 공부
-- 네트워크: <네트워킹 프로그래밍: 하향식 접근>
+### 현재의  관심
+학습 방법: 과제를 통한 문제 해결과 깊은 주제로의 확장
+#### 개발
+- Java: 함수형 프로그래밍, 동적 프록시
+- Spring Framework & Spring Boot
+- 클린 코드, TDD
+#### Computer Science
+- 네트워크: ⌈네트워킹 프로그래밍: 하향식 접근⌋
 - 운영체제: 반효경 교수님 강의
-- 알고리즘 & 자료구조 이론: 부스트캠프 인강
-- 정보처리기사
+- 알고리즘 & 자료구조 이론: 인강
+
 ## 기술 블로그
 ### Open Courseware
 - [여러분의 CS 교육에서 누락된 학기](https://missing-semester-kr.github.io/)
