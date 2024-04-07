@@ -136,16 +136,16 @@ def print_each_n_times(li):
 
 #### 정렬 알고리즘 비교
 
-| Sorting Algorithm | 공간 복잡도 | 최악 | 최선 | 평균 |
-| --- | --- | --- | --- | --- |
-| Bubble Sort | O(1) | O(n) | O(n2) | O(n2) |
-| Heapsort | O(1) | O(n log n) | O(n log n) | O(n log n) |
-| Insertion Sort | O(1) | O(n) | O(n2) | O(n2) |
-| Mergesort | O(n) | O(n log n) | O(n log n) | O(n log n) |
-| Quicksort | O(log n) | O(n log n) | O(n log n) | O(n2) |
-| Selection Sort | O(1) | O(n2) | O(n2) | O(n2) |
-| Shell Sort | O(1) | O(n) | O(n log n2) | O(n log n2) |
-| Smooth Sort | O(1) | O(n) | O(n log n) | O(n log n) |
+| Sorting Algorithm | 공간 복잡도   | 최악         | 최선          | 평균          |
+| ----------------- | -------- | ---------- | ----------- | ----------- |
+| Bubble Sort       | O(1)     | O(n)       | O(n2)       | O(n2)       |
+| Heapsort          | O(1)     | O(n log n) | O(n log n)  | O(n log n)  |
+| Insertion Sort    | O(1)     | O(n)       | O(n2)       | O(n2)       |
+| Mergesort         | O(n)     | O(n log n) | O(n log n)  | O(n log n)  |
+| Quicksort         | O(log n) | O(n log n) | O(n log n)  | O(n2)       |
+| Selection Sort    | O(1)     | O(n2)      | O(n2)       | O(n2)       |
+| Shell Sort        | O(1)     | O(n)       | O(n log n2) | O(n log n2) |
+| Smooth Sort       | O(1)     | O(n)       | O(n log n)  | O(n log n)  |
 
 *최악/최선/평균은 모두 시간 복잡도임
 
@@ -153,18 +153,18 @@ def print_each_n_times(li):
 
 **Average Case**
 
-|Data Structure | Search | Insert | Delete |
-| --- | --- | --- | --- |
-| Array | O(n) | N/A | N/A |
-| Sorted Array | O(log n) | O(n) | O(n) |
-| Linked List | O(n) | O(1) | O(1) |
-| Doubly Linked List | O(n) | O(1) | O(1) |
-| Stack | O(n) | O(1) | O(1) |
-| Hash table | O(1) | O(1) | O(1) |
+|   Data Structure   |  Search  |  Insert  |  Delete  |
+| :----------------: | :------: | :------: | :------: |
+|       Array        |   O(n)   |   N/A    |   N/A    |
+|    Sorted Array    | O(log n) |   O(n)   |   O(n)   |
+|    Linked List     |   O(n)   |   O(1)   |   O(1)   |
+| Doubly Linked List |   O(n)   |   O(1)   |   O(1)   |
+|       Stack        |   O(n)   |   O(1)   |   O(1)   |
+|     Hash table     |   O(1)   |   O(1)   |   O(1)   |
 | Binary Search Tree | O(log n) | O(log n) | O(log n) |
-| B-Tree | O(log n) | O(log n) | O(log n) |
-| Red-Black tree | O(log n) | O(log n) | O(log n) |
-| AVL Tree | O(log n) | O(log n) | O(log n) |
+|       B-Tree       | O(log n) | O(log n) | O(log n) |
+|   Red-Black tree   | O(log n) | O(log n) | O(log n) |
+|      AVL Tree      | O(log n) | O(log n) | O(log n) |
 
 **Worst Case**
 
