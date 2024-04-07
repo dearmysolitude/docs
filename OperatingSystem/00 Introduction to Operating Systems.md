@@ -97,8 +97,6 @@ Created At: 2023-09-25
 
 **Mac, 기타 Handheld Device위한 운영체제: PalmOS, TinyOS, ...**
 
-<br>
-
 ## 구조
 ![os01](https://onedrive.live.com/embed?resid=C4F97B3B64AE3E7A%216628&authkey=%21AMCuXqqDOOhdV7Y&width=534&height=349)
 ### CPU 스케줄링
