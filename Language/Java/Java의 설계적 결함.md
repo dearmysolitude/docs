@@ -6,6 +6,7 @@ tags:
   - Interview
 excerpt: 자바의 설계적 결함들
 Created At: 2024-02-19
+sticker: ""
 ---
 1. **불편한 예외 처리**
 
