@@ -1,6 +1,22 @@
+## Byte
+Byte 자료형은 메모리 바이트와 동일한 크기를 담고 있어 Byte, Byte[] 는 C에서 char, char[]와 같은 의미를 가지고 있다. 문자열이나 비트 연산을 수행하여 데이터를 처리하고자 할 때 byte로 데이터를 저장하거나 조작한다.
+
+> [!Note]
+> String 👉 Byte
+> ```java
+> String a = "한글";
+> Byte[] b = a.getBytes();
+> ```
+> Byte 👉 String
+> ```java
+> String c = new String(b, 0, 5); 
+> // String으로 바꿀 바이트 배열의 시작 인덱스와 마지막 인덱스를 넣어준다.
+> ```
+
+## Buffer와 Stream
+
 - File, socket, 웹 관련 클래스들은 Buffer, Stream 클래스로 데이터를 주고받는다.
 - Buffer/Stream은 일정 크기에 메모리 공간을 가지고 데이터를 처리하는 클래스이다.
-## Buffer와 Stream
 ### Buffer
 - 데이터를 일시적으로 저장하는 메모리 공간이다. 입출력 작업 시 성능 향상을 위해 사용된다.
 - 버퍼에 데이터를 쌓아 둔 후 한 번에 입출력 작업을 수행하여 시스템 호출 횟수를 줄인다.
@@ -19,7 +35,9 @@
 - 버퍼는 고정 크기이지만 스트림은 고정된 크기를 가지지 않는다.
 일반적으로 이 둘은 함께 사용하여 입출력 작업의 효율성을 높인다. 데이터를 버퍼에 쌓아두었다가 한 번에 스트림을 통해 전송하여 성능을 향상시킬 수 있다.
 ## StringBuffer
-String 클래스의 메모리 처리 비합리성을 개선하기 위해 StringBuffer가 추가되었다. String의 변경이 자주 일어나는 경우 StringBuffer 형을 사용한다. String 데이터형은 immutable이기 때문에 메모리 상에서 변경을 하려면 새로운 메모리 공간에 저장하여 그 데이터를 가르키는 형태로 변수 초기화가 이루어진다. 변경이 수 천, 수 만번 발생하는 경우에 대한 string에 대한 처리는 프로그램에 부담을 준다.
+String 클래스의 메모리 처리 비합리성을 개선하기 위해 StringBuffer가 추가되었다. String의 변경이 자주 일어나는 경우 StringBuffer 형을 사용한다. 자바의 문자열이 immutable인 이유는 여러 이점이 있기 때문이므로, 자세한 
+String 데이터형은 immutable이기 때문에 메모리 상에서 변경을 하려면 새로운 메모리 공간에 저장하여 그 데이터를 가르키는 형태로 변수 초기화가 이루어진다. 이런 특징 때문에 변경이 수 천, 수 만번 발생하는 경우에 대한 string에 대한 처리는 프로그램에 부담을 준다.
+
 ### StringBuffer의 특징
 - String 처럼 문자형 배열(char[])을 내부적으로 가지고 있다.
 - String 클래스와 달리 내용을 변경할 수 있다.
@@ -43,3 +61,4 @@ public static void main(String[] args) {
 - `append()`: 여러 메서드가 오버로딩 되어있음, 문자열 추가
 - `delete(int start, int end)`: 해당 index의 문자열 제거
 - `toString()`: String 형태로 변경
+
