@@ -58,7 +58,7 @@ java프로그램은 JVM(Java Virtual Machine : 자바가상머신)이라는 프�
 
 프로그램이 실행되면, JVM은 OS으로부터 이 프로그램이 필요로 하는 메모리를 할당받고, JVM은 이 메모리를 용도에 따라 여러 영역으로 나누어 관리한다.
 
-JVM은 크게 3부분으로 나눌 수 있다. 클래스 파일을 로딩한 뒤 검증하고 초기화하는 Class loader subSystem, 클래스 파일을 저장하는 Runtime DataArea(이곳은 다시 method area, heap, java stacks, pc registers, native method stacks의 5가지 영역으로 나누어진다), 클래스 파일(바이트코드)를 플랫폼에 맞는 기계어로 변환시켜 실행하는 **Execution engine 이다.
+JVM은 크게 3부분으로 나눌 수 있다. 클래스 파일을 로딩한 뒤 검증하고 초기화하는 Class loader subSystem, 클래스 파일을 저장하는 Runtime DataArea(이곳은 다시 method area, heap, java stacks, pc registers, native method stacks의 5가지 영역으로 나누어진다), 클래스 파일(바이트코드)를 플랫폼에 맞는 기계어로 변환시켜 실행하는 **Execution engine** 이다.
 
 <figure style="width: 85%" class="align-center">
   <img src="https://onedrive.live.com/embed?resid=C4F97B3B64AE3E7A%216855&authkey=%21APQhuIcoQOp6wP8&width=489&height=331" alt="">
@@ -105,9 +105,9 @@ JVM은 크게 3부분으로 나눌 수 있다. 클래스 파일을 로딩한 뒤
 
 - Method Area, Code Area, Static Area 로 불리어짐
 
-1. Field Information : 멤버변수의 이름, 데이터 타입, 접근 제어자에 대한 정보
-2. Method Information : 메서드의 이름, 리턴타입, 매개변수, 접근제어자에 대한 정보
-3. Type Information : - Type의 속성이 Class인지 Interface인지의 여부 저장
+1. **Field Information** : 멤버변수의 이름, 데이터 타입, 접근 제어자에 대한 정보
+2. **Method Information** : 메서드의 이름, 리턴타입, 매개변수, 접근제어자에 대한 정보
+3. **Type Information** : - Type의 속성이 Class인지 Interface인지의 여부 저장
     - Type의 전체이름(패키지명+클래스명)
     - Type의 Super Class의 전체이름
     (단, Type이 Interface이거나 Object Class인 경우 제외)
