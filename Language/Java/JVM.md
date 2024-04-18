@@ -189,3 +189,8 @@ JVM은 크게 3부분으로 나눌 수 있다. 클래스 파일을 로딩한 뒤
 
 - KOSA 마성일 강사님 자바 강의 자료
 - https://interviewnoodle.com/jvm-architecture-71fd37e7826e
+
+## 추가로 알아볼 주제
+- JIT Compiler
+- GraalVM
+- [JIT 컴파일러 최적화 기술](https://mangkyu.tistory.com/343)
