@@ -1,0 +1,2 @@
+- JDBC와 다르게 Root passwd 숨겨짐: JNDI
+- 
