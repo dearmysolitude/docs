@@ -59,3 +59,25 @@ public static void main(String[] args) {
 - `append()`: 여러 메서드가 오버로딩 되어있음, 문자열 추가
 - `delete(int start, int end)`: 해당 index의 문자열 제거
 - `toString()`: String 형태로 변경
+
+## 참고
+-------------------
+자바에서 문자열과 관련된 인코딩 처리는 다음과 같이 동작합니다.
+
+1. 입력 문자열(String or StringBuffer)의 인코딩
+    - 자바에서 문자열 리터럴이나 String 객체는 UTF-16 인코딩을 사용합니다.
+    - StringBuffer로 생성된 문자열 역시 내부적으로는 UTF-16 인코딩을 사용합니다.
+2. toString() 메서드를 통해 StringBuffer -> String 변환시
+    - toString() 메서드는 StringBuffer 내부의 문자 배열을 새로운 String 객체로 복사합니다.
+    - 이때 String 객체 역시 UTF-16 인코딩을 유지합니다.
+3. 문자열 출력시
+    - 콘솔이나 파일 등으로 출력할 때는 기본 플랫폼의 기본 인코딩(보통 UTF-8)을 사용하여 변환됩니다.
+    - 이때 필요에 따라 인코딩 변환이 수행됩니다. (UTF-16 -> 플랫폼 기본 인코딩)
+
+따라서 toString() 메서드를 통해 StringBuffer에서 String으로 변환할 때, 인코딩 정보 자체는 변경되지 않고 유지됩니다. 다만 최종적으로 출력할 때 플랫폼의 기본 인코딩으로 변환되는 과정이 있습니다.
+만약 특정 인코딩을 명시적으로 지정하고 싶다면 String 생성자나 getBytes() 메서드 등을 사용하여 인코딩을 지정할 수 있습니다.
+
+```java
+byte[] bytes = "Hello".getBytes("UTF-8"); // UTF-8 인코딩된 바이트 배열 String str = new String(bytes, "UTF-8"); // UTF-8 인코딩된 문자열 객체`
+```
+-------------------
