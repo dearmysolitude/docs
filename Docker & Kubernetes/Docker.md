@@ -89,26 +89,4 @@ OS단 레이어는 커널.
 	2. 도커가 새로운 컨테이너를 만든다.
 	3. 도커가 read-write 파일시스템을 도커에 할당한다.
 	4. 도커가 컨테이너에 default 네트워크와 연결할 네트워크 인터페이스를 생성한다.
-	5. 도커가 컨테이너를 시작한다.
-## 도커 명령어
-https://docs.docker.com/get-started/overview/
-### 컨테이너 생성하기: 이미지 파일을 가져와서 실행하는 경우
-`docker run -d -p 82:80 --name apache_docker -v /home/lucid/html:/usr/local/apache2/htdocs httpd:latest`
-- httpd:latest 도커 이미지를 검색하여 run한다. 
-- `-d`: 데몬에서 실행하여 백그라운드 실행/로그 기록
-- `-p`: 포트포워딩으로 도커 80 포트를 호스트 82 포트에 연결한다.
-- `-name`: 도커 컨테이너의 이름
-- `-v` 바인딩할 스토리지 설정
-### 동작하는 컨테이너에 접근
-`docker exec -it [컨테이너 id] /bin/bash`
-### 도커 이미지 생성
-`docker build -t [생성할 이미지 이름] .`
-- Dockerfile을 빌드하여 이미지를 생성한다. 
-- `.`은 이미지로 만들 해당 위치의 Dockerfile을 지칭하기 위한 것이다.
-### 컨테이너 생성하기: 스토리지 바인딩 없이 만든 이미지로
-`docker run -d -p 83:80 --name docker-apache2`
-- 생성한 이미지를 바로 사용할 경우에는 스토리지 바인딩이 없어도 ㅇㅋ
-
-[도커 컨테이너 / 이미지 관리 - 오준석 brunch](https://brunch.co.kr/@hopeless/10)
-
-> 여기까지가 기본적인 docker의 사용법: 제대로 활용하기 위해서는 여러 Docker를 조율하여 사용해야 한다Docker Compose → Docker Swarm → Kubernetes
+	5. 도커가 컨테이너를 시작한다
