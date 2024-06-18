@@ -219,3 +219,13 @@ host$ docker run -it --name con3 192.168.26.61:1950/kopo00:1.0
 > [!note] YML
 > - 데이터 직렬화 언어. 구성파일 작성에 자주 사용된다. JSON의 상위 집합으로 JSON 파일을 사용할 수 있다.
 > - 구조는 map(key-value 쌍) 혹은 list 이다. 목록 하나에 필요한 수의 map 형태 데이터(객체)가 포함될 수 있다.
+
+```shell
+host$ docker-compose up -d (전체 서비스 실행)
+host$ docker-compose down (전체 서비스 종료)
+host$ docker-compose up -d wordpressdb (특정 서비스만 실행)
+host$ docker-compose down wordpressdb (특정 서비스만 종료)
+host$ docker-compose ps (실행중인 컨테이너 보기)
+host$ docker-compose exec wordpressdb bash (쉘 진입)
+host$ docker-compose logs -f wordpressdb (로그 보기)
+```
