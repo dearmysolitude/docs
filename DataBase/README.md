@@ -11,4 +11,4 @@
 
 [[데이터베이스 기초]]
 [[동시성(Concurrency)]]
-[[MySQL FullText Search]]
+[[TODO MySQL FullText Search]]
