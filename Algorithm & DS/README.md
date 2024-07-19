@@ -22,5 +22,5 @@ Created At: 2024-02-19
 - Bubble Sort
 - Shell Sort
 - Quick Sort
-- [[Heap Sort]]
+- [[Heap Sort 예제]]
 - Merge Sort
