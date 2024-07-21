@@ -1,16 +1,13 @@
-
-## Web Application의 구조
-기본적인 web application의 architecture에 대해 살펴본다. Web application은 layered structure로 이루어져 있다. 
+## Web 사이트의 구조
+기본적인 web site의 architecture에 대해 살펴본다. Web site는 layered structure로 이루어져 있다. 
 ### View: UI
 HTML/CSS/JavaScript. 프론트엔드가 다루는 분야이므로 어떤 것인지 간단하게 정리만 하고 넘어간다.
 #### HTML
 #### CSS
 #### JavaScript
 
-#### 추가 관련 용어
+#### 추가 용어
 - DOM Tree
-##### AJAX
-AJAX is an asynchronous way to pass information to the server and get responses. The cited a-synchronicity comes from the fact that in a form the content needs to be passed and then the response will come after a page refresh, but with AJAX the requested information, that is the result of the user’s action will come in the actual page. It saves time and gives to the user the impression that the application is really interacting with him.
 ### Controller
 UI와  Service를 연결한다. 
 controller:  UI와 Service를 연결
@@ -47,7 +44,6 @@ https://ccomccomhan.tistory.com/35
 	- 분리함으로써, mock(개발시, 완벽히 작동하는 dao의 구현체) / impl(실제 서비스에 사용하는 dao 구현체)를 바꿔가며 오류를 발견할 수 있다.
 - 인터페이스가 없다면, main은 dao에, dao는 domain에 직접 의존하여 domain이 바뀌기만 해도 모든 코드가 영향을 받는다.
 - dao는 코드에 대한 규칙이 정해져있지만, 어떤 자료를 어떤 이름으로, 어떤 형식으로 저장할 지 고민하는 것이 결국에는 이슈이다: Domain에 대한 이해가 필요, 필요에 따라 뽑아낼 수 있는 능력이 있어야 한다.
-
 ## 정적 페이지 / 동적 페이지
 
 **단계 1**: 정적 페이지
