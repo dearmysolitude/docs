@@ -11,7 +11,7 @@
 - Spring Framework & Spring Boot: 프레임워크의 구조와 원리
 - 클린 코드
 #### Computer Science
-- [[CS 기초/Readme|CS기초]]: 크래프톤 정글에서 학습한 개념 위주로. 
+- [[ComputerScience/Readme|CS기초]]: 크래프톤 정글에서 학습한 개념 위주로. 
 - 네트워크: ⌈네트워킹 프로그래밍: 하향식 접근⌋
 - 운영체제: 반효경 교수
 - 알고리즘 & 자료구조 이론: 인강
