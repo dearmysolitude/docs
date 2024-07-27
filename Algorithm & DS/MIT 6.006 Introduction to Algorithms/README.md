@@ -1,1 +1,1 @@
-[[Hashing]]
+[[Algorithm & DS/MIT 6.006 Introduction to Algorithms/Hashing]]
