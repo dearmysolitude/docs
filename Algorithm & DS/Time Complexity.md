@@ -57,9 +57,9 @@ c는 고정 공간(상수)를, Sp(n)은 가변 공간을 나타낸다.
  
 ![bigO](https://onedrive.live.com/embed?resid=C4F97B3B64AE3E7A%216612&authkey=%21ANsaBynlZyIMGtA&width=359&height=215)
 
-정의: 모든 N>N0 에 대하여, f(N) ≤ k⋅g(N) 이 성립하는 양의 상수 k 와 N0​ 가 존재하면, f(N) = O(g(N)) 이다.
+정의: 모든 $N>N_0$ 에 대하여, $f(N) ≤ k⋅g(N)$ 이 성립하는 양의 상수 $k$ 와 $N_0$​ 가 존재하면, $f(N) = O(g(N))$ 이다.
 계수와 낮은 차수의 항을 제외시키는 방법으로 시간 복잡도를 표현한다. 즉, 해당 알고리즘이 나타내어진 차수이거나 그보다 낮은 차수의 시간복잡도를 가진다는 의미이다: 그 즉슨, Big-O 표기법은 알고리즘의 최악의 경우를 표현한다.
-실제 상황에서 알고리즘의 속도는 정확하지 않을 수 있지만, 이 방법을 사용하는 이유는, n에 대한 일반적인 추세를 확인할 수 있기 때문이다: 입력값의 변화에 따른 알고리즘의 시간 소비를 예측할 수 있다.
+실제 상황에서 알고리즘의 속도는 정확하지 않을 수 있지만, 이 방법을 사용하는 이유는, $n$에 대한 일반적인 추세를 확인할 수 있기 때문이다: 입력값의 변화에 따른 알고리즘의 시간 소비를 예측할 수 있다.
 Big-O 계산으로는 $O(5n +7) = O(5n) = O(n), O(n² + 25) = O(n²)$ 를 예로 들 수 있다. 하지만 여기에서 등호는 '같다(equals)'가 아닌 '이다(is)', '정도이다(approx)' 라고 해석해야 혼란을 피할 수 있다.(여기에서의 직관적으로 '같다'라고 판단하는 데에서 Big-O의 오용이 발생했고, 이로 인해 Big-θ notation이 등장하였다.)
 
 ![bigO](https://onedrive.live.com/embed?resid=C4F97B3B64AE3E7A%216610&authkey=%21AEAWPiCbG3GkIsg&width=426&height=29)
@@ -72,7 +72,7 @@ Big-O 계산으로는 $O(5n +7) = O(5n) = O(n), O(n² + 25) = O(n²)$ 를 예로
 
 ![timecomplexity](https://onedrive.live.com/embed?resid=C4F97B3B64AE3E7A%216599&authkey=%21AB_MgZiUxcSOkxU&width=1080&height=723)
 
-시간 복잡도를 표현하는 방법 중 하나인 Big-O에 의한 여러가지 알고리즘의 분류. 가로 축은 처리해야하는 데이터 양(n), 세로 축은 그에 따른 작업량을 의미한다. (출처: [http://bigocheatsheet.com/](http://bigocheatsheet.com/))
+시간 복잡도를 표현하는 방법 중 하나인 Big-O에 의한 여러가지 알고리즘의 분류. 가로 축은 처리해야하는 데이터 양($n$), 세로 축은 그에 따른 작업량을 의미한다. (출처: [http://bigocheatsheet.com/](http://bigocheatsheet.com/))
 
 > 선호되는 알고리즘. 단연 시간 소모가 적은 왼쪽이 선호된다: $O(1)$ < $O(log₂ n)$ < $O(n)$ < $O(n log₂ n)$ < $O(n²)$ < $O(2ⁿ)$ < $O(n!)$
 
