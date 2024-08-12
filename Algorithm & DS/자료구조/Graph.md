@@ -14,19 +14,14 @@ Created At: 2023-04-27
 [MST](https://www.notion.so/MST-5fea75bb7bfa44d3a4f6a2d18d279de9?pvs=21): 최적 경로 산출
 
 ## List / Tree / Graph
-
 - List: One predecessor , oen successor at most
 - Tree: One predecessor(parenet), several successors(childrens)
 - Graph: ordered collection, but several predecessors and successors: (바이너리) 트리와 달리 노드가 가리킬 수 있는 갯수가 2개로 정해져 있지 않고 마음대로 참조하게 됨→ 어떻게 traverse 할 수 있을 것인가?
 
 Graph G = (V, E)
-
 V = { $v_i$ }: a finite non-empty set of vertices(or nodes)
-
 E = { $e_i$ }: a finite(possibly empty) set of edges (or arcs)
-
 $e_i$ connects two vertices in V
-
 용어: Unabled vertices: 노드들이 무명인 / Labeled vertices:노드들에 이름 붙음 / Labled vertices and weighted edges: 노드에 라벨되어 있고 edge들이 weighted되어 있음
 
 <figure style="width: 85%" class="align-center">

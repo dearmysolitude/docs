@@ -19,21 +19,15 @@ Created At: 2023-04-16
 **Push**
 
 스택이 가득 찼는지 확인
-
 가득 차면 오류 발생 후 종료
-
 스택이 가득차지 않았으면 차지 않으면 top을 증가시킨다.
-
 Top이 가리키는 스택 위치에 데이터를 추가한다.
 
 **Pop**
 
 스택이 비어있는지 확인한다.
-
 비어있다면 오류 발생 후 종료
-
 스택이 비어있지 않다면 top이 가리키는 데이터를 제거한다.
-
 top을 제거 후 성공을 반환한다.
 
 **시간복잡도**
@@ -63,10 +57,10 @@ top을 제거 후 성공을 반환한다.
 
 ```python
 def pop(self)
-		try:   # pop할 아이템이 없으면
-			return self.items.pop()
-		except indexError: 발생
-				print("stack is empty")
+	try:   # pop할 아이템이 없으면
+		return self.items.pop()
+	except indexError: 발생
+			print("stack is empty")
 ```
 
 ## 스택: 계산기 구현
@@ -155,13 +149,10 @@ infix는 사람들이 사용하는 이항 연산자를 가운데에다가 적는
 1. 두 피연산자를 묶는 괄호를 만든다.
 2. 오른쪽 괄호 바깥쪽에 가운데에 있던 연산자를 옮겨 준다.
 3. 괄호를 없앤다.
-
-> 3*(2+5)\*4 → 3*(25+)\*4 →  325+\*4*
-
+$3*(2+5)*4$ → $3*(2\ 5+)*4$ →  $3\ 2\ 5\ +\ *\ 4\ *$
 컴퓨터가 infix를 postfix로 바꾸는 과정과 postfix로 만들어진 식 모두 스택을 활용하여 계산이 진행된다.
 
 #### infix를 postfix로 바꾸는 과정
-
 리스트: outstack <<postfix저장/ 스택: opstack <<연산자 저장
 
 ```python
