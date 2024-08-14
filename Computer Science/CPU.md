@@ -60,4 +60,3 @@ Central Processing Unit. CPU는 메인메모리 / 보조 기억장치 / 입력 �
 4. Decoder가 명령 레지스터의 내용을 해독하고, encoder가 명령 실행에 필요한 장치에게 제어신호를 보냄으로써 명령이 실행된다.
 ![ControlDevice](https://onedrive.live.com/embed?resid=C4F97B3B64AE3E7A%218075&authkey=%21AA50E-XxFO8-VgE&width=960&height=344)
 > 호출 > 해독 > 실행 > 저장
-
