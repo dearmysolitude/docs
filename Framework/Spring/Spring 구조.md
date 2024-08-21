@@ -1,5 +1,6 @@
 
-
+### Dispatcher Servlet
+[Dispatcher Servlet](https://mangkyu.tistory.com/18)
 ### Handler Mapping
 컴파일을 진행하면서 여러 Mapping Annotation에 의해 붙은 주소로 연결한다.
 [ **추천**: Spring MVC - HandlerMapping의 동작방식 이해하기](https://velog.io/@hsw0194/Spring-MVC-HandlerMapping%EC%9D%98-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-1%ED%8E%B8)
@@ -12,6 +13,10 @@ View name과 데이터를 가지고 어떤 뷰를 만들지 prefix를 붙여준�
 ### View
 Model에 넣어주면 view에 자동으로 injection 되기 때문에 
 
+
+
+## 설명 추가
+Repository Controller Service는 모두 component를 상속함. 이들은 스프링에서 관리하여 singleton으로 Spring Bean으로 존재하며, autowired를 통해 injection할 수 있다. Entity를 Component를 상속받지 않는 것을 확인해보자.
 
 
 ## Maven Repository
