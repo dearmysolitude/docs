@@ -4,7 +4,7 @@
 [[2. Spring Framework - Core Features]]
 [[3. Spring 예제 코드 01]]
 [[4. Spring Web MVC의 등장 배경]]
-[[5 - 0. Spring Boot]]
+[[5-0. Spring Boot]]
 ### 개별 주제
 [[TODO. Spring Data JPA]]
 [[TODO. MVC-request-lifecycle]]
