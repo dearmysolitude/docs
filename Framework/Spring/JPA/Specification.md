@@ -48,8 +48,6 @@ public void test1() {
 
 람다 함수로 작성된 filter 메서드를 살펴보라.
 
-
-
 JPA Criteria를 활용하는 방법으로, 동적으로 직접 쿼리를 일반적인 상황에 맞게 상용하도록 작성할 수 있다. 하지만 조금만 수정을 가해도 코드가 미친듯이 복잡해지기 때문에, 실무에서는  QueryDSL을 사용하는 것이 권장된다.
 
 [JPA Specification](https://velog.io/@hellozin/JPA-Specification%EC%9C%BC%EB%A1%9C-%EC%BF%BC%EB%A6%AC-%EC%A1%B0%EA%B1%B4-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0)
