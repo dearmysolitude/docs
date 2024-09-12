@@ -15,8 +15,8 @@
 2. Call Stack: 함수를 호출했을 때 콜스택이 쌓이는 스택 영역
 3.  Web API: 타이머, 네트워크 요청, 파일 입출력, 이벤트 처리 등 브라우저에서 제공하는 다양한 API를 포괄하는 총칭.
 	비동기적으로 실행되는 작업들을 전담하여 처리한다(Ajax 호출, 타이머함수, DOM 조작). 
-	Chrome에서 멀티스레드로 구현되어 있으며, 비동기 작업에 대해 메인 스레드를 차단하지 않고 다른 스레드를 사용하여 동시에 처리가 가능한 것이다.
-4. Callback Queue: 런타임이 처리해야할 일들을 줄 세우는 메시지(태스크) 큐.
+		Chrome에서 멀티스레드로 구현되어 있으며, 비동기 작업에 대해 메인 스레드를 차단하지 않고 다른 스레드를 사용하여 동시에 처리가 가능한 것이다.
+1. Callback Queue: 런타임이 처리해야할 일들을 줄 세우는 메시지(태스크) 큐.
 	각 메세지는 해당 메세지를 처리하기 위한 연관 함수(콜백 함수 -  비동기적 작업이 완료되면 실행되는 함수들)를 가진다.
 ![자바스크립트 런타임](https://1drv.ms/i/s!Ano-rmQ7e_nEv2t0V6dpQBJqsowa?embed=1&width=882&height=810)
 5.  Event Loop: JS 런타임 모델의 기반이 되는 기능. 코드를 실행하고, 이벤트를 모으고 처리하고, 큐에 저장된 내용을 실행한다.
@@ -114,7 +114,7 @@ Static Site Generator. **원시 데이터와 템플릿 세트를 기반으로 �
 [자바스크립트 동작 원리에 대한 깊은 이해](https://medium.com/@lifthus531/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B9%8A%EC%9D%80-%EC%9D%B4%ED%95%B4-dd4fd47d8917)
 [자바스크립트 동작 원리와 call stack, event loop](https://bbangson.tistory.com/89)
 [자바스크립트 이벤트 루프 동작 구조](https://inpa.tistory.com/entry/%F0%9F%94%84-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84-%EA%B5%AC%EC%A1%B0-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98_%EB%82%B4%EB%B6%80_%EA%B5%AC%EC%84%B1%EB%8F%84)
-
+[자바스크립트 원리 - 엘도라도님 블로그](https://it-eldorado.tistory.com/86)
 
 [SPA, MPA 그리고 CSR과 SSR](https://medium.com/@sebinndev/spa-mpa-%EA%B7%B8%EB%A6%AC%EA%B3%A0-csr%EA%B3%BC-ssr-89de972ab153)
 [프로그래시브 웹 앱 소개](https://developer.mozilla.org/ko/docs/Web/Progressive_web_apps/Tutorials/js13kGames)
@@ -123,3 +123,4 @@ Static Site Generator. **원시 데이터와 템플릿 세트를 기반으로 �
 [Semantic Web의 의미는 무엇일까?](https://medium.com/@pranne1224/semantic-web-%EC%9D%98%EB%AF%B8%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C-feat-microformats-vs-schema-org-%EC%9D%B4%EB%A1%A0%ED%8E%B8-bd1fc8345d7e)
 [웹 페이지를 표시한다는 것: 브라우저는 어떻게 동작하는가 - mdn](https://developer.mozilla.org/ko/docs/Web/Performance/How_browsers_work)
 [브라우저는 어떻게 동작하는가? - Naver D2](https://d2.naver.com/helloworld/59361)
+

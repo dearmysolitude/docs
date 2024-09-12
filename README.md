@@ -21,8 +21,6 @@
 ChatGPT API를 사용한 프로그래머 학습 로드맵 작성 서비스
 - Github: https://github.com/road-maker/road-maker-spring
 - 프로젝트 회고 및 기타 정보(개인 자료): [[로드메이커 관련 정보]]
-#### TODO 애플리케이션
-Spring Framework를 사용한 TODO 애플리케이션
 #### 토이 프로젝트
 - 채팅 프로그램(Java): 자바 네트워크
 - 숫자야구 게임(Java): 단위테스트
@@ -42,7 +40,9 @@ Spring Framework를 사용한 TODO 애플리케이션
 - [우아한 형제들 기술 블로그](https://techblog.woowahan.com/)
 - [토스 기술 블로그](https://toss.tech/) 
 - [당근 기술 블로그](https://medium.com/daangn)
+- [29cm 기술 블로그](https://medium.com/29cm)
 ### 기타
+- [Open Tutorials](https://www.opentutorials.org)
 - [gyoogle님 블로그](https://gyoogle.dev/)
 - [황원철님 블로그](https://wch18735.github.io/)
 - [BytebyteGo](https://bytebytego.com/): 가상 면접 사례로 배우는 대규모 시스템 설계 기초의 알렉스 쉬 블로그/뉴스레터
