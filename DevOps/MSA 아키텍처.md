@@ -1,4 +1,11 @@
-Microservice Architecture
+컴포턴트 간의 관계
+- 조직이 커지는 경우 이러한 구조를 변경하는 것이 필요해짐
+
+
+
+## Monolithic Architecture
+모놀리식 아키텍처
+## Microservice Architecture
 Monolithic architecture에 대한 문제를 대처하기 위해 적용되는 아키텍처
 
 | 장점                 | 단점                        |
@@ -15,4 +22,7 @@ Monolithic architecture에 대한 문제를 대처하기 위해 적용되는 아
 - 서비스간 통신양 증가 - Bandwitdth: 서비스 관리가 어려움
 - Monolithic 서비스의 하나의 DB에서와 달리 api로 db 조회 요청을 보내야하는 번거로움이 발생
 
-항상 Pros & Cons 때문에 필요에 따라 적용한다
+항상 Pros & Cons 때문에 필요에 따라 적용한다.
+## 읽을 거리
+[마이크로 서비스 아키텍처와 개발문화 - 맹윤호](https://brunch.co.kr/@maengdev/3)
+[쿠버네티스 시작하기 - subicura](https://subicura.com/2019/05/19/kubernetes-basic-1.html)

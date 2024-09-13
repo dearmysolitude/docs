@@ -70,7 +70,7 @@
 - 클린 코드
 - TDD
 ### 기술 / 아키텍처
-- [[Docker]]
+- [[DevOps/Docker & Kubernetes/Docker]]
 - Kubernetes
 - AWS
 ### 데이터베이스

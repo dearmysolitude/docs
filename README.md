@@ -46,5 +46,7 @@ ChatGPT API를 사용한 프로그래머 학습 로드맵 작성 서비스
 - [gyoogle님 블로그](https://gyoogle.dev/)
 - [황원철님 블로그](https://wch18735.github.io/)
 - [BytebyteGo](https://bytebytego.com/): 가상 면접 사례로 배우는 대규모 시스템 설계 기초의 알렉스 쉬 블로그/뉴스레터
+- Hacker News
+- Geek News
 ## 기타
 [Obsidian 작성에 대한 공식 문서](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax)
