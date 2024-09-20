@@ -1,0 +1,1 @@
+[10분 테코톡](https://www.youtube.com/watch?v=c4rDrirE7Bc)

@@ -80,3 +80,6 @@ for i in range(2, n):
 
 1. optimum value를 물어보는 경우-DP 이더라도 아닐 수 있음
 2. 앞으로 할 결정이 현재/과거 결정에 의해 영향을 받는 경우. 즉 이전 단계가 다음 단계에 영향을 끼치는 경우
+
+> [!important] 참고
+> [DP - 10분 테코톡](https://youtu.be/JK4_U3OVWcY?si=UzCaveiJPbC01_vJ)
