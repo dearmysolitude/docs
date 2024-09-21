@@ -1,4 +1,4 @@
-## 리스트 접근: 화살표함수 사용
+## 리스트 접근: 화살표함수의 사용
 
 ## props를 통해 자식으로 변수들을 전달하기
 https://react.dev/learn/javascript-in-jsx-with-curly-braces
