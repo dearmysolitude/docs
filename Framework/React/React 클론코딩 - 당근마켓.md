@@ -46,18 +46,148 @@ export default function Coupang({
 }
 ```
 
-> [!notice] 과제
-> - webpack
-> - polyfill / babel
-> - ESlint / prettier
-> - naming convention
-> - camelCase, kebab-case, snake_case, PascalCase
-> - px, em, rem
-> - semantic versioning / tilde , caret
-> - API 한 줄 설명 (이해할 수 있게)
-> - RESTful / REST API
-> - HTTP Method / HTTP 응답코드
-> - javascript promise
+## 과제
+### webpack
+모던 Javascript 애플리케이션을 위한 여러 파일(HTML, CSS, Javascript, Images 등)을 각각 모듈로 보고 하나의 파일로 합쳐주는 모듈 번들러(Module Bundler).
+- 웹 사이트를 구성할 때 많은 파일이 모여 웹사이트를 구성한다. 많은 파일의 다운로드가 이루어질 수 있으며, 이는 서버의 자원을 소모하고 웹사이트 실행 속도를 느리게 한다.
+- 여러 자바스크립트 패키지를 사용하다보면 다른 패키지에서 같은 이름을 사용하는 함수나 변수가 존재하게 되면서 애플리케이션이 깨지는 문제가 발생하기도 하였다.
+#### 사용상 이점
+1. 성능 최적화, 자동화: 코드 축소, 사용 없는 코들ㄹ 제거하는 tree shaking과 같은 최적화하여 HTTP 요청 수를 감소시키고, 로딩 속도를 빠르게 해준다.
+2. 파일단위의 js 모듈 관리: 모든 파일 하나 하나를 모듈화 해준다.
+3. 번들러의 편의성: Sass, Stylus, TypeScript 사용 시 컴파일 과정에서 필요한 플러그인을 추가하고 실행해 준다.
+4. Dependency issue 해결: 빌드 시 모든 종속성을 함께 번들하여 준다.
+#### 구성
+- Entry
+- Output
+- Loader
+- Plugin
+
+참고: [Webpack을 쓰는 이유: 프론트엔드의 모듈화의 역사](https://ingg.dev/webpack/), [Webpack은 왜 필요할까요](https://velog.io/@gusdh2/Webpack%EC%9D%B4%EB%9E%80-%EC%99%9C-%ED%95%84%EC%9A%94%ED%95%A0%EA%B9%8C%EC%9A%94)
+### Polyfill
+Polyfill이란 , 오래된 브라우저에서 없는 기능 구현을 채워주기 위한 스크립트이다. 오래된 브라우저의 경우 `Promise`나 `Set` 객체가 없는 경우가 있다. `Array.prototpe.at()` API 도 Chrome 92 이상에서만 지원이 된다. 대부분의 Polyfill은 이미 브라우저에 포함되어 있는지 체크하고, 없으면 값을 채우는 형태로 동작한다.
+```JS
+Array.prototype.at = Array.prototype.at ?? /* Array.prototype.at에 대한 자체 구현 */;
+```
+표준적으로 사용되는 Polyfill은 [core-js 레포지터리](https://github.com/zloirock/core-js)에 모여 있다. `import 'core-js/actual;` 문구를 통해 대부분의 ECMAScript 표준 객체와 메서드를 오래된 브라우저에서도 사용할 수 있게 된다.
+
+참고: [똑똑하게 브라우저 polyfill 관리하기](https://toss.tech/article/smart-polyfills)
+### Babel
+Babel 공식 사이트의 소개에 따르면, Babel은 자바스크립트 컴파일러이다. 정확히는 JavaScript로 변환해주는 소스 대 소스 컴파일러, 즉 **transpiler**이다.
+최신 브라우저조차도 지원하지 못하는 문법과 기술의 출연에 의해 새루운 ESNext 문법을 기존의 브라우저에 사용하기 위해 Babel이 사용된다. 
+Babel은 polyfill을 지원하기위한 babel-polyfill 기능을 지원한다. 하지만 [@babel/polyfill 은 deprecated 되었다.](https://poiemaweb.com/babel-polyfill)
+참고: [babel 이란 무엇인가?](https://bravenamme.github.io/2020/02/12/what-is-babel/)
+### ESlint / prettier
+- ESLint: ECMAScript와 Lint를 합친 용어로, lint는 에러가 있는 코드에 표시를 달아놓는 것이다. ESLint는 자바스크립트 문법에서 에러가 발생하면 표시해주는 도구이며, 전반적인 코딩 스타일까지 지정할 수 있어 현업에서 사용된다.
+- Prettier: 작성 코드를 일관성 있게 포맷팅해주는 도구이다. 줄바꿈이나 들여쓰기 등을 설정해서 파일을 저장할 때마다 형식에 맞게 정렬해주는 것이다.
+ESLint는 Linter이고, Prettier는 Formatter라고 보면 된다. Linter는 소스코드에 문제가 있는지 검사하여 문제있는 부분에 flag를 달아주는 소프트웨어 도구이고, formatter는 일관된 스타일로 작성할 수 있도록 코드를 변환해주는 도구이다.
+참고: [ESLint와 Prettier 공유 컨피그 만들어보기](https://techblog.woowahan.com/15903/)
+### Naming Convention
+- Coding Convention의 하나(나머지는 주석 컨벤션과 들여쓰기 컨벤션이 있다.)
+- 소스 코드와 문서의 변수/타입/함수 등의 식별자에 사용되는 문자열을 선택하기 위한 규칙들
+- 프로젝트/프로그래밍 언어/개발 도구 등에 따라 달라진다.
+이를 설정하는 이유는 소스 코드를 읽고 이해하는데 드는 시간을 절약하기 위함, 즉 가독성 때문이다. 개발자와 분석가가 시스템 수행 작업 및 소스코드를 수정/확장 등의 경우 적용하는 방법을 보다 쉽게 이해할 수 있도록 도와주는 것이다.
+#### camelCase
+단봉 낙타 표기법, 이름의 첫 문자를 소문자로, 나머지 단어의 첫 글자를 대문자로 표기한다.
+Upper Camel Case라고 하는 첫글자도 대문자인 표기법도 있지만, 일반적으로 camel case라고 하면 Lower Camel Case, 즉 단봉 낙타 표기법이다.
+#### kebab-case
+모든 단어를 소문자로 시작하고, 단어와 단어 사이는 "-"(대쉬)로 연결한다.
+#### snake_case
+각 단어 사이를 "\_"(언더바)로 구분하는 표기법
+#### PascalCase
+전체 이름의 첫 문자를 포함한 각 단어의 첫 문자를 대문자로 표기하는 표기법
+### px, em, rem
+CSS에서 사용하는 단위들. em과 rem은 **상대 단위**로 유동적으로 변한다(%, vw, vh 등도 포함됨). px는 **절대 단위**로, 어떤 상황에서든 고정된 길이를 나타낸다. 웹에서는 여러 단위가 있지만 px를 제외하고서는 잘 쓰이지 않는다.
+- px: 1 픽셀. font의 px설정은 사용자의 설정값을 덮어써, 개발자가 font-size를 px 값으로 설정했다면 사용자가 설정으로 변경해도 변경되지 않는다.
+- em: 해당 단위가 사용되는 요소의 font-size를 기준으로 px로 바뀌어 화면에 표시된다. 
+```css
+div {
+	font-size; 20px;
+	width: 10em; /* 200px */
+}
+```
+아래와 같은 경우, 
+```css
+.container {
+font-size: 14px;
+}
+
+.container.title {
+font-size: 2em; // 28px
+}
+
+.container.subtitle {
+font-size: 1.5em; // 21px
+}
+
+.container.subtitle.leading {
+font-size: 0.5em; /* 10.5px */
+}
+```
+container.subtitle.leading의 경우 10.5px이다: 자식으로 상속
+- rem: r은 root를 뜻하고, 최상위 엘리먼트에서 지정된 font-size값을 기준으로 변환된다. HTML에서 최상위 요소는 <\html> 태그이므로, html 요소의 font-size 속성 값이 기준이 된다. 별도로 설정되지 않은 경우, 각 브라우저에서 기본적으로 설정된 값(16px)을 상속받는다.
+### Semantic versioning
+의존성은 소프트웨어 개발 생태계에서 서로의 기술과 성과를 이어받아 새로운 소프트웨어를 만들어내는 협력 체계의 요소이다. 이러한 의존성에 의해 여러 사람이 이용하는 패키지가 새롭게 업데이트 될 때, 기능의 사용법이나 동작 방식의 변경 같은 변화들이 이에 의존하는 소프트웨어가 의도대로 동작하지 못하게 하므로, 이를 위해 변화와 기존의 것을 구분할 필요성이 발생하였다. 버전은 이런 패키지의 변화를 구분하기 위한 방법인 것이다.
+[Semantic Versioning](https://semver.org)은(줄여서 Semver), Github 공동 창업자인 Tom Preston-Werner가 패키지마다 버전 명의 작성방이 다른 문제를 해결하기 위해 기존의 논의를 모아 만든 제안이다. 스펙 문서는 RFC 2119에 의해 규칙을 표기하여 의미적으로 엄격히 하고, 패키지 개발 생명주기에 발생할 수 있는 여러 상황을 포괄적으로 담아 일관성과 유연성을 갖추게 한 것이다.
+
+참고: [Semantic Versioning 소개](https://spoqa.github.io/2012/12/18/semantic-versioning.html)
+#### Tilde
+틸드는 `~` 특수문자를 의미하며, 버저닝에서는 현재 지정한 버전의 마지막 자리 내 범위에서만 자동으로 업데이트 한다. 예를 들어,
+- `~0.0.1`: `>= 0.0.1 <0.1.0` 
+- `~0.1.1` : `>=0.1.1 <0.2.0`
+- `~0.1` : `>=0.1.0 <0.2.0`
+- `~0` : `>=0.0 <1.0`
+#### Caret
+캐럿은 `^` 특수문자를 의미하며, 버저닝에서는 최신 minor 버전까지만 업데이트되고, 해당 major 버전을 초과하여 업데이트 되지 않도록 하여 하위호환성을 유지하는 역할을 한다. npm 패키지 관리자의 모든 패키지 버전은 기본적으로 캐럿을 붙인 상태이다.
+- `^1.2.3`: 1.2.3보다 크거나 같고, 2.0.0보다 작은 버전까지만 업데이트한다.
+SemVer규약을 따른다는 가정하에, 하위 호환성이 보장되는 minor 버전까지 업데이트를 허용하게 하는 것이다. 하지만 정식 릴리즈가 아닌 `0.y.z`버전의 경우 패치 버전만 업데이트를 허용한다. API의 변경이 일어날 수 있기 때문이다.
+
+참고: [Semantic Versioning(caret, tilde)](https://wonsss.github.io/etc/semver/#referecne)
+### API
+Application Programming Interface의 줄임말. 두 소프트웨어 구성 요소가 서로 통신할 수 있게 하는 메커니즘. 두 어플리케이션 사이의 서비스 계약을 인터페이스라고 한다면, 인터페이스는 요청과 응답에 어떻게 두 어플리케이션이 통신할지 정의한다.
+### RESTful / REST API
+웹에서 볼 수 있는 가장 많이 사용되고 유연한 API이다. 클라이언트가 서버에 요청을 데이터로 전송하면, 서버는 이 입력을 이용하여 내부 함수를 시작하고 출력 데이터를 클라이언트에 반환한다.
+Representational State Transfer의 줄임말. 클라이언트가 서버 데이터에 엑세스하는데 사용할 수 있는 GET, PUT, Delete 등의 함수 집합을 정의하고, 클라이언트와 서버는 HTTP 규약을 통해 데이터를 교환한다.
+무상태로, 서버가 요청 간에 클라이언트의 데이터를 저장하지 않는 특성이 있다. 클라이언트의 요청은 URL과 유사하고, 서버의 응답은 렌더링과 관련 없는 일반 데이터가 되는 것이다.
+
+RESTful: REST 아키텍처를 구현하는 웹 서비스를 RESTful 웹 서비스라고 한다. 일반적으로 RESTful API라는 용어는 일반적으로 RESTful 웹 API를 나타낸다. 특징은 다음과 같다.
+- 균일한 인터페이스: 서버가 표준 형식으로 정보를 전송한다.
+- 무상태: 서버가 이전의 모든 요청과 독립적으로 클라이언트 요청을 완료한다.
+- 계층화: 비즈니스 로직, 보안, 애플리케이션 로직 같은 여러 계층으로 여러 서버에서 실행되게 할 수 있지만 클라이언트에서는 이 것이 보이지 않는다.
+- 캐시 가능성: 서버 응답시간을 개선하기 위해 클라이언트 혹은 중개자에 일부 응답을 저장하는 캐싱을 지원한다.
+- 온디멘드 코드: 소프트웨어 프로그래밍 코드를 클라이언트에 정송하여 클라이언트 기능을 일시적으로 확장하거나 사용자 지정할 수 있다.
+RESTful API를 사용하면,
+- 확장성
+- 유연성
+- 독립성
+참고: [RESTful API란 무엇인가요?](https://aws.amazon.com/ko/what-is/restful-api/)
+### HTTP Method / HTTP 응답코드
+HTTP는 요청 메서드를 정의하여, 주어진 리소스에 수행하길 원하는 행동을 나타낸다. 
+- `GET`: 특정 리소스의 표시를 요청
+- `HEAD`: GET메서드의 요청과 동일한 응답을 요구하지만, 응답 본문을 포함하지 않는다.
+- `POST`: 특정 리소스에 엔티티를 제출할 때 쓰인다.
+- `PUT`: 목적 리소스 모든 현재 표시를 요청 payload로 바꾼다.
+- `DELETE`: 특정 리소스 삭제
+- `CONNECT`: 목적 리소스로 식별되는 서버로의 터널을 맺는다.
+- `OPTIONS`: 목적 리소스의 통신을 설정하는 데 쓰인다.
+- `TRACE`: 목적 리소스의 경로를 따라 메시지 LOOP-BACK 테스트를 한다.
+- `PATCH`: 리소스의 부분만을 수정하는데 쓰인다.
+HTTP 상태코드는 특정 HTTP 요청이 어떻게 완료되었는지 알려준다.
+- 정보 응답(100 번 대)
+- 성공(200 번 대)
+- 리다이렉트(300 번 대)
+- 클라이언트 에러(400 번 대)
+- 서버 에러(500 번 대)
+
+참고: [HTTP 요청 메서드](https://developer.mozilla.org/ko/docs/Web/HTTP/Methods) / [HTTP 상태 코드](https://developer.mozilla.org/ko/docs/Web/HTTP/Status)
+### JavaScript Promise
+`Promise` 객체는 비동기 작업이 맞이할 미래의 완료 또는 실패와 그 결과 값을 나타낸다. 상태 정보를 가지고 있는 객체로, 쉽게 말하자면 작업의 결과가 저장되어 이 객체를 통해 작업이 성공했는지, 실패했는지 알 수 있다.
+Pending / Fulfilled / Rejected 의 세가지 상태를 가질 수 있다. 비동기 작업을 순차적으로 실행하기 위함이며, callback 함수가 많아지면 가독성이 낮아지기 때문에 사용한다. 
+세가지 메서드를 가지고 있다:
+1. `then`: `Promise` 객체가 fulfilled 상태가 되면 실행할 콜백 함수를 등록하는 메서드
+2. `catch`: `Promise` 객체가 rejected 상태가 되면 실행할 콜백 함수를 등록하는 메서드
+3. `finally`: 어떤 작업의 성공, 실패 여부와 상관없이 항상 실행하고 싶은 콜백함수를 등록하는 메서드
+
+참고: [Promise](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 > [!notice] 심화
 > - javascript global object 종류
