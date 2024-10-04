@@ -10,3 +10,7 @@
 [[TODO. MVC-request-lifecycle]]
 [[TODO. spring-interceptor-resolver]]
 [[TODO. spring-strcuture]]
+
+
+## 참고
+[Spring Boot 앱과 React 연동하기](https://bright-landscape.tistory.com/404)
