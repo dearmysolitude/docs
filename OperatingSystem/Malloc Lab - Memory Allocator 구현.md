@@ -37,30 +37,30 @@ Created At: 2023-05-15
 Malloc lab에서 구현을 위해 사용하는 매크로는 주로 포인터를 쉽게 사용하기 위해 설정되었다.
 
 ```c
-#define WSIZE       4       // word와 header, footer사이즈(bytes)
-#define DSIZE       8       // 더블 워드의 사이즈(bytes)
-#define CHUNKSIZE (1<<12)   // 힙 확장 크기(bytes)
+define WSIZE       4       // word와 header, footer사이즈(bytes)
+define DSIZE       8       // 더블 워드의 사이즈(bytes)
+define CHUNKSIZE (1<<12)   // 힙 확장 크기(bytes)
 
-#define MAX(x, y) ((x) > (y) ? (x) : (y))
+define MAX(x, y) ((x) > (y) ? (x) : (y))
 
 /*크기 및 할당 비트를 통합하여 헤더, 풋터에 저장할 값을 반환*/
-#define PACK(size, alloc)   ((size) | (alloc))
+define PACK(size, alloc)   ((size) | (alloc))
 
 /*포인터 p의 참조인자를 읽기/쓰기*/
-#define GET(p)      (*(unsigned int *)(p))
-#define PUT(p, val) (*(unsigned int *)(p) =(val))
+define GET(p)      (*(unsigned int *)(p))
+define PUT(p, val) (*(unsigned int *)(p) =(val))
 
 /*주어진 포인터가 가르키는 블록의 헤더, 풋터에 있는 사이즈, 할당 여부의 비트를 리턴*/
-#define GET_SIZE(p)     (GET(p) & ~0x7)
-#define GET_ALLOC(p)    (GET(p) & 0x1)
+define GET_SIZE(p)     (GET(p) & ~0x7)
+define GET_ALLOC(p)    (GET(p) & 0x1)
 
 /*블록 포인터로 헤더, 풋터의 포인터 반환*/
-#define HDRP(bp)        ((char *) (bp) - WSIZE)
-#define FTRP(bp)        ((char *) (bp) + GET_SIZE(HDRP(bp)) - DSIZE)
+define HDRP(bp)        ((char *) (bp) - WSIZE)
+define FTRP(bp)        ((char *) (bp) + GET_SIZE(HDRP(bp)) - DSIZE)
 
 /*이전 블록의 포인터를 반환*/
-#define NEXT_BLKP(bp)   ((char *)(bp) + GET_SIZE(((char *)(bp) - WSIZE)))
-#define PREV_BLKP(bp)   ((char *)(bp) - GET_SIZE(((char *)(bp) - DSIZE)))
+define NEXT_BLKP(bp)   ((char *)(bp) + GET_SIZE(((char *)(bp) - WSIZE)))
+define PREV_BLKP(bp)   ((char *)(bp) - GET_SIZE(((char *)(bp) - DSIZE)))
 ```
 
 ### 1. 포인터의 형태
